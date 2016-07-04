@@ -1,13 +1,19 @@
 package com.lanou.chenfengyao.musicdemo;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.lanou.chenfengyao.musicdemo.base.BaseAty;
+import com.lanou.chenfengyao.musicdemo.utils.BindContent;
+
+@BindContent(value = R.layout.activity_main)
+public class MainActivity extends BaseAty {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void initView() {
+
+    }
+
+    @Override
+    protected void initData() {
+
     }
 }
