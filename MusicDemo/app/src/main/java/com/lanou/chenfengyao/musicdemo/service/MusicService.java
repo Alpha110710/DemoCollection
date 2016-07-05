@@ -16,6 +16,24 @@ import java.util.List;
  * 媒体浏览服务，使应用程序可以浏览由应用程序提供的媒体内容，并要求应用程序开始播放它.
  * 它们也可以用于控制已由MediaSession的方式播放的内容。
  */
+
+/**
+ * 这个类提供了通过服务MediaBrowser的。
+ * 它暴露了媒体库的浏览客户端，通过onGetRoot和onLoadChildren方法。
+ * 它还创建一个MediaSession并公开它通过其MediaSession.Token，
+ * 它允许客户机创建连接到将MediaController和远程发送控制命令到MediaSession。
+ * 这是需要与媒体会话交互，如Android汽车的用户界面非常有用。
+ * 你可以（应该）也使用相同的服务从您的应用程序的用户界面，
+ * 这给了无缝的播放体验给用户相同的服务。
+ *
+ * 想要实现一个MediaBrowserService你需要
+ * 1 继承MediaBrowserServiceCompat并实现里面的两个抽象方法
+ * 2 设置一个回调{android.media.session.MediaSession#setCallback(android.media.session.MediaSession.Callback)}
+ *    这个回调将会接收所有的用户控制,例如播放,暂停等
+ * 3 处理所有音乐播放使用任何你喜欢的方式(例如android.media.MediaPlayer)
+ * 4 更新playbackState，“正在播放”元数据和队列，利用MediaSession的正确方法
+ * 5 在清单文件中注册服务 并添加action android.media.browser.MediaBrowserService
+ */
 public class MusicService extends MediaBrowserServiceCompat{
 
     /**
