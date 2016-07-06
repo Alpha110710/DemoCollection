@@ -10,6 +10,7 @@ import android.support.v4.media.session.MediaSessionCompat;
 import android.media.MediaPlayer.*;
 import android.support.v4.media.session.PlaybackStateCompat;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.lanou.chenfengyao.musicdemo.model.MusicProvider;
 import com.lanou.chenfengyao.musicdemo.model.MusicProviderSource;
@@ -27,7 +28,7 @@ import java.io.IOException;
  * 2.2引入了称作AudioFocus的机制来管理对Audio资源的竞争的管理与协调。
  */
 
-//TODO WifiLock相关的代码 都没加入
+//TODO WifiLock相关的代码 都没加入,广播接收者也没有加入
 public class LocalPlayback implements PlayBack, AudioManager.OnAudioFocusChangeListener
         , OnCompletionListener, OnErrorListener, OnPreparedListener, OnSeekCompleteListener {
     //静态常量
@@ -190,13 +191,13 @@ public class LocalPlayback implements PlayBack, AudioManager.OnAudioFocusChangeL
                 //设置资源
                 mMediaPlayer.setDataSource(source);
                 mMediaPlayer.prepareAsync();//异步加载
-                if(mCallback != null){
+                if (mCallback != null) {
                     //更新状态
                     mCallback.onPlaybackStatusChanged(mState);
                 }
             } catch (IOException e) {
                 e.printStackTrace();
-                if(mCallback != null){
+                if (mCallback != null) {
                     //发送错误信息
                     mCallback.onError(e.getMessage());
                 }
@@ -205,34 +206,57 @@ public class LocalPlayback implements PlayBack, AudioManager.OnAudioFocusChangeL
         }
     }
 
+    //暂停
     @Override
     public void pause() {
-
+        if (mState == PlaybackStateCompat.STATE_PLAYING) {
+            if (mMediaPlayer != null && mMediaPlayer.isPlaying()) {
+                mMediaPlayer.pause();//暂停
+                //记录下暂停时的进度
+                mCurrentPosition = mMediaPlayer.getCurrentPosition();
+            }
+            //释放资源
+            relaxResources(false);
+            giveUpAudioFocus();//释放音频焦点
+        }
+        mState = PlaybackStateCompat.STATE_PAUSED;
+        if (mCallback != null) {
+            mCallback.onPlaybackStatusChanged(mState);
+        }
     }
 
     @Override
     public void seekTo(int position) {
-
+        if (mMediaPlayer == null) {
+            mCurrentPosition = position;
+        } else {
+            if (mMediaPlayer.isPlaying()) {
+                mState = PlaybackStateCompat.STATE_BUFFERING;
+            }
+            mMediaPlayer.seekTo(position);
+            if (mCallback != null) {
+                mCallback.onPlaybackStatusChanged(mState);
+            }
+        }
     }
 
     @Override
     public void setCurrentMediaId(String mediaId) {
-
+        this.mCurrentMediaId = mediaId;
     }
 
     @Override
     public String getCurrentMediaId() {
-        return null;
+        return mCurrentMediaId;
     }
 
     @Override
     public void setCallback(Callback callback) {
-
+        this.mCallback = callback;
     }
 
     /**
-     * 当音频焦点改变时的回调
-     *
+     * 当音频焦点改变时的回调 由AudioManager调用的
      * @param focusChange 音频焦点如何发生了变化
      *                    AUDIOFOCUS_GAIN:你已获得了音频焦点．
      *                    AUDIOFOCUS_LOSS:你已经丢失了音频焦点比较长的时间了．你必须停止所有的音频播放．因为预料到你可能很长时间也不能再获音频焦点，所以这里是清理你的资源的好地方．比如，你必须释放MediaPlayer．
@@ -244,27 +268,71 @@ public class LocalPlayback implements PlayBack, AudioManager.OnAudioFocusChangeL
      */
     @Override
     public void onAudioFocusChange(int focusChange) {
+        if(focusChange == AudioManager.AUDIOFOCUS_GAIN){
+            //获得音频焦点
+            mAudioFocus = AUDIO_FOCUSED;
+        } else if(focusChange == AudioManager.AUDIOFOCUS_LOSS ||
+                focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT ||
+                focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK){
+            //失去了焦点,如果能小声放,就继续播放,不能就暂停
+            boolean canDuck = focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK;
+            mAudioFocus = canDuck ? AUDIO_NO_FOCUS_CAN_DUCK : AUDIO_NO_FOCUS_NO_DUCK;
+            //如果正在播放,需要通过调用configMediaPlayerState来重置MediaPlayer
+            if(mState == PlaybackStateCompat.STATE_PLAYING && !canDuck){
+                //如果我们既没有抢占焦点,也不能小声播放,我们先把信息保存了
+                //让我们正在播放,所以我们重置一次来再次获得焦点
+                mPlayOnFocusGain = true;
+            }
 
+        }else {
+            Log.d("LocalPlayback", "focusChange:" + focusChange);
+        }
+        configMediaPlayerState();
     }
 
+    //当前的歌曲播放完成
     @Override
     public void onCompletion(MediaPlayer mp) {
-
+        if(mCallback!=null){
+            //回调CallBack的完成方法,具体播放什么歌曲由callback来决定
+            mCallback.onCompletion();
+        }
     }
 
+
+    //当MediaPlayer发生了错误,需要通知callback 并重置mediaPlayer
     @Override
     public boolean onError(MediaPlayer mp, int what, int extra) {
-        return false;
+        if(mCallback != null){
+            mCallback.onError("发生错误,what:"+what+",extra:"+extra);
+        }
+        return true;
     }
 
+    //当加载完成
     @Override
     public void onPrepared(MediaPlayer mp) {
-
+        configMediaPlayerState();
     }
 
+
+    //当定位结束
     @Override
     public void onSeekComplete(MediaPlayer mp) {
+        mCurrentPosition = mp.getCurrentPosition();
+        if(mState == PlaybackStateCompat.STATE_BUFFERING){
+            mp.start();
+            mState = PlaybackStateCompat.STATE_PLAYING;
+        }
+        changeCallbackStatus();
+    }
 
+
+    //更新callback的状态
+    private void changeCallbackStatus(){
+        if(mCallback != null){
+            mCallback.onPlaybackStatusChanged(mState);
+        }
     }
 
     /**
