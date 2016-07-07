@@ -35,7 +35,8 @@ import android.support.v4.media.session.MediaSessionCompat;
 import android.support.v4.media.session.PlaybackStateCompat;
 import android.support.v7.app.NotificationCompat;
 
-import com.lanou.chenfengyao.musicdemo.service.MusicService;
+import com.lanou.chenfengyao.musicdemo.service.GMusicService;
+import com.lanou.chenfengyao.musicdemo.ui.MainActivity;
 import com.lanou.chenfengyao.musicdemo.utils.LogHelper;
 import com.lanou.chenfengyao.musicdemo.utils.ResourceHelper;
 
@@ -57,7 +58,7 @@ public class MediaNotificationManager extends BroadcastReceiver {
     public static final String ACTION_NEXT = "com.example.android.uamp.next";
     public static final String ACTION_STOP_CASTING = "com.example.android.uamp.stop_cast";
 
-    private final MusicService mService;
+    private final GMusicService mService;
     private MediaSessionCompat.Token mSessionToken;
     private MediaControllerCompat mController;
     private MediaControllerCompat.TransportControls mTransportControls;
@@ -78,7 +79,7 @@ public class MediaNotificationManager extends BroadcastReceiver {
 
     private boolean mStarted = false;
 
-    public MediaNotificationManager(MusicService service) throws RemoteException {
+    public MediaNotificationManager(GMusicService service) throws RemoteException {
         mService = service;
         updateSessionToken();
 
@@ -169,9 +170,9 @@ public class MediaNotificationManager extends BroadcastReceiver {
                 mTransportControls.skipToPrevious();
                 break;
             case ACTION_STOP_CASTING:
-                Intent i = new Intent(context, MusicService.class);
-                i.setAction(MusicService.ACTION_CMD);
-                i.putExtra(MusicService.CMD_NAME, MusicService.CMD_STOP_CASTING);
+                Intent i = new Intent(context, GMusicService.class);
+                i.setAction(GMusicService.ACTION_CMD);
+                i.putExtra(GMusicService.CMD_NAME, GMusicService.CMD_STOP_CASTING);
                 mService.startService(i);
                 break;
             default:
@@ -314,7 +315,7 @@ public class MediaNotificationManager extends BroadcastReceiver {
                 .setLargeIcon(art);
 
         if (mController != null && mController.getExtras() != null) {
-            String castName = mController.getExtras().getString(MusicService.EXTRA_CONNECTED_CAST);
+            String castName = mController.getExtras().getString(GMusicService.EXTRA_CONNECTED_CAST);
             if (castName != null) {
                 String castInfo = mService.getResources()
                         .getString(R.string.casting_to_device, castName);

@@ -20,7 +20,7 @@ import java.io.IOException;
 /**
  * Created by ChenFengYao on 16/7/5.
  * PlayBack的实现类,使用的是MediaPlayer
- * <p>
+ * 该类只负责播放,暂停等功能,具体播放什么不确定
  * 关于音频焦点
  * Android是多任务系统，Audio系统是竞争资源。Android2.2之前，
  * 没有内建的机制来解决多个程序竞争Audio的问题，
@@ -175,11 +175,11 @@ public class LocalPlayback implements PlayBack, AudioManager.OnAudioFocusChangeL
             //释放一次资源,但是MediaPlayer就不要释放了
             relaxResources(false);
             //从MusicProvider里获得歌曲的内容
-            MediaMetadataCompat track
-                    = mMusicProvider.getMusic(
-                    MediaIDHelper.extractMusicIDFromMediaID(item.getDescription().getMediaId()));
+//            MediaMetadataCompat track
+//                    = mMusicProvider.getMusic(
+//                    MediaIDHelper.extractMusicIDFromMediaID(item.getDescription().getMediaId()));
             //TODO 这个方法没搞明白
-            String source = track.getString(MusicProviderSource.CUSTOM_METADATA_TRACK_SOURCE);
+//            String source = track.getString(MusicProviderSource.CUSTOM_METADATA_TRACK_SOURCE);
 
             createMediaPlayerIfNeeded();//创建MediaPlayer
             mState = PlaybackStateCompat.STATE_BUFFERING;
@@ -188,13 +188,13 @@ public class LocalPlayback implements PlayBack, AudioManager.OnAudioFocusChangeL
             mMediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
             try {
                 //设置资源
-                mMediaPlayer.setDataSource(source);
+//                mMediaPlayer.setDataSource(source);
                 mMediaPlayer.prepareAsync();//异步加载
                 if (mCallback != null) {
                     //更新状态
                     mCallback.onPlaybackStatusChanged(mState);
                 }
-            } catch (IOException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
                 if (mCallback != null) {
                     //发送错误信息
