@@ -25,6 +25,7 @@ public class MusicProvider {
 
     }
 
+    //这是对的
     //通过索引来确定播放的歌曲
     public MusicBean getMusicFromIndex(int index){
         if(index>=0 && index < musicBeanList.size()){
