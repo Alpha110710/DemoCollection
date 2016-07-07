@@ -22,7 +22,6 @@ import java.util.List;
  * Created by ChenFengYao on 16/7/6.
  * 数据提供者的队列,里面有当前正在播放的队列和正在播放的索引
  * 依赖MusicProvider 来提供音乐的内容
- * TODO 没写完
  */
 public class QueueManager {
     private MusicProvider mMusicProvider;
@@ -34,8 +33,8 @@ public class QueueManager {
     private int mCurrentIndex;
 
     public QueueManager(@NonNull MusicProvider mMusicProvider,
-                        @NonNull MetadataUpdateListener mMetadataUpdateListener,
-                        @NonNull Resources mResources) {
+                        @NonNull Resources mResources,
+                        @NonNull MetadataUpdateListener mMetadataUpdateListener) {
         this.mMusicProvider = mMusicProvider;
         this.mListener = mMetadataUpdateListener;
         this.mResources = mResources;
