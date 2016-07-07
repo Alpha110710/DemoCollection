@@ -36,11 +36,18 @@ public class QueueManager {
                         @NonNull Resources mResources,
                         @NonNull MetadataUpdateListener mMetadataUpdateListener) {
         this.mMusicProvider = mMusicProvider;
+        mMusicProvider.retrieveMediaAsync(new MusicProvider.Callback() {
+            @Override
+            public void onMusicCatalogReady(boolean success) {
+
+            }
+        });
         this.mListener = mMetadataUpdateListener;
         this.mResources = mResources;
         //获得一个线程安全的List
         mPlayingQueue = Collections.synchronizedList(new ArrayList<MediaSessionCompat.QueueItem>());
         mCurrentIndex = 0;
+
     }
 
     //是否浏览相同的记录

@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.lanou.chenfengyao.mirror.utils.BindContent;
-import com.lanou.chenfengyao.mirror.utils.NoLayoutBindException;
+import com.lanou.chenfengyao.musicdemo.utils.BindContent;
+import com.lanou.chenfengyao.musicdemo.utils.NoLayoutBindException;
 
 
 /**
@@ -34,16 +35,17 @@ public abstract class BaseFragment extends Fragment {
         //重新启动的时候，判断状态来决定是否显示出来
         //来解决Fragment的堆叠问题
         super.onCreate(savedInstanceState);
-    if (savedInstanceState != null) {
-        boolean isSupportHidden = savedInstanceState.getBoolean(STATE_SAVE_IS_HIDDEN);
+        if (savedInstanceState != null) {
+            boolean isSupportHidden = savedInstanceState.getBoolean(STATE_SAVE_IS_HIDDEN);
 
-        FragmentTransaction ft = getFragmentManager().beginTransaction();
-        if (isSupportHidden) {
-            ft.hide(this);
-        } else {
-            ft.show(this);
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            if (isSupportHidden) {
+                ft.hide(this);
+            } else {
+                ft.show(this);
+            }
+            ft.commit();
         }
-        ft.commit();
     }
 
     //记录当前Fragment的状态

@@ -6,6 +6,7 @@ import android.os.SystemClock;
 import android.support.annotation.NonNull;
 import android.support.v4.media.session.MediaSessionCompat;
 import android.support.v4.media.session.PlaybackStateCompat;
+import android.util.Log;
 
 import com.lanou.chenfengyao.musicdemo.R;
 import com.lanou.chenfengyao.musicdemo.model.MusicProvider;
@@ -55,6 +56,7 @@ public class PlaybackManager implements PlayBack.Callback {
     public void handlePlayRequest() {
         MediaSessionCompat.QueueItem currentMusic =
                 mQueueManager.getCurrentMusic();
+        Log.d("PlaybackManager", "currentMusic == null:" + (currentMusic == null));
         if (currentMusic != null) {
             mServiceCallback.onPlaybackStart();
             //开始播放

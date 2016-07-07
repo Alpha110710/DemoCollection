@@ -22,6 +22,9 @@ public class MyApplication extends Application {
     }
 
     public static void addAty(Activity activity){
+        if(activityList == null){
+            activityList = new LinkedList<>();
+        }
         activityList.add(activity);
     }
 

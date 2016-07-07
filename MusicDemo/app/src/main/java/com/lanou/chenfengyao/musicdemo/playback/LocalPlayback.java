@@ -1,7 +1,6 @@
 package com.lanou.chenfengyao.musicdemo.playback;
 
 import android.content.Context;
-import android.content.IntentFilter;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.PowerManager;

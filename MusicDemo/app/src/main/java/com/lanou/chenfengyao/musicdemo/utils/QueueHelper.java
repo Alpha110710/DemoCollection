@@ -19,6 +19,7 @@ package com.lanou.chenfengyao.musicdemo.utils;
 import android.os.Bundle;
 import android.support.v4.media.MediaMetadataCompat;
 import android.support.v4.media.session.MediaSessionCompat;
+import android.util.Log;
 
 
 import com.lanou.chenfengyao.musicdemo.VoiceSearchParams;
@@ -173,6 +174,9 @@ public class QueueHelper {
     }
 
     public static boolean isIndexPlayable(int index, List<MediaSessionCompat.QueueItem> queue) {
+        Log.d("Sysout", "queue==null:" + (queue == null));
+        Log.d("Sysout", "queue.size():" + queue.size());
+        Log.d("Sysout", "index:" + index);
         return (queue != null && index >= 0 && index < queue.size());
     }
 }
