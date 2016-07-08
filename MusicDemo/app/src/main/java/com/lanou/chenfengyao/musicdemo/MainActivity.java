@@ -39,15 +39,15 @@ public class MainActivity extends BaseAty {
 
     @Override
     protected void initData() {
-        MediaPlayer mediaPlayer = new MediaPlayer();
-        try {
-            mediaPlayer.setDataSource(url);
-            mediaPlayer.prepare();
-            mediaPlayer.start();
-        } catch (IOException e) {
-            e.printStackTrace();
-            Log.d("MainActivity", "e:" + e);
-        }
+//        MediaPlayer mediaPlayer = new MediaPlayer();
+//        try {
+//            mediaPlayer.setDataSource(url);
+//            mediaPlayer.prepare();
+//            mediaPlayer.start();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//            Log.d("MainActivity", "e:" + e);
+//        }
     }
 
 }
