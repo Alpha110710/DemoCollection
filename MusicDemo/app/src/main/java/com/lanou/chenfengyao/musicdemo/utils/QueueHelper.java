@@ -23,7 +23,7 @@ import android.util.Log;
 
 
 import com.lanou.chenfengyao.musicdemo.VoiceSearchParams;
-import com.lanou.chenfengyao.musicdemo.model.MusicProvider;
+import com.lanou.chenfengyao.musicdemo.model.MusicProviderImpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +39,7 @@ public class QueueHelper {
     private static final int RANDOM_QUEUE_SIZE = 10;
 
     public static List<MediaSessionCompat.QueueItem> getPlayingQueue(String mediaId,
-                                                                     MusicProvider musicProvider) {
+                                                                     MusicProviderImpl musicProviderImpl) {
 
         // extract the browsing hierarchy from the media ID:
         String[] hierarchy = MediaIDHelper.getHierarchy(mediaId);
@@ -54,9 +54,9 @@ public class QueueHelper {
         Iterable<MediaMetadataCompat> tracks = null;
         // This sample only supports genre and by_search category types.
         if (categoryType.equals(MEDIA_ID_MUSICS_BY_GENRE)) {
-            tracks = musicProvider.getMusicsByGenre(categoryValue);
+            tracks = musicProviderImpl.getMusicsByGenre(categoryValue);
         } else if (categoryType.equals(MEDIA_ID_MUSICS_BY_SEARCH)) {
-            tracks = musicProvider.searchMusicBySongTitle(categoryValue);
+            tracks = musicProviderImpl.searchMusicBySongTitle(categoryValue);
         }
 
         if (tracks == null) {
@@ -67,7 +67,7 @@ public class QueueHelper {
     }
 
     public static List<MediaSessionCompat.QueueItem> getPlayingQueueFromSearch(String query,
-                                                                               Bundle queryParams, MusicProvider musicProvider) {
+                                                                               Bundle queryParams, MusicProviderImpl musicProviderImpl) {
 
 
         VoiceSearchParams params = new VoiceSearchParams(query, queryParams);
@@ -76,18 +76,18 @@ public class QueueHelper {
         if (params.isAny) {
             // If isAny is true, we will play anything. This is app-dependent, and can be,
             // for example, favorite playlists, "I'm feeling lucky", most recent, etc.
-            return getRandomQueue(musicProvider);
+            return getRandomQueue(musicProviderImpl);
         }
 
         Iterable<MediaMetadataCompat> result = null;
         if (params.isAlbumFocus) {
-            result = musicProvider.searchMusicByAlbum(params.album);
+            result = musicProviderImpl.searchMusicByAlbum(params.album);
         } else if (params.isGenreFocus) {
-            result = musicProvider.getMusicsByGenre(params.genre);
+            result = musicProviderImpl.getMusicsByGenre(params.genre);
         } else if (params.isArtistFocus) {
-            result = musicProvider.searchMusicByArtist(params.artist);
+            result = musicProviderImpl.searchMusicByArtist(params.artist);
         } else if (params.isSongFocus) {
-            result = musicProvider.searchMusicBySongTitle(params.song);
+            result = musicProviderImpl.searchMusicBySongTitle(params.song);
         }
 
         // If there was no results using media focus parameter, we do an unstructured query.
@@ -98,7 +98,7 @@ public class QueueHelper {
         if (params.isUnstructured || result == null || !result.iterator().hasNext()) {
             // To keep it simple for this example, we do unstructured searches on the
             // song title only. A real world application could search on other fields as well.
-            result = musicProvider.searchMusicBySongTitle(query);
+            result = musicProviderImpl.searchMusicBySongTitle(query);
         }
 
         return convertToQueue(result, MEDIA_ID_MUSICS_BY_SEARCH, query);
@@ -157,12 +157,12 @@ public class QueueHelper {
     /**
      * Create a random queue with at most {@link #RANDOM_QUEUE_SIZE} elements.
      *
-     * @param musicProvider the provider used for fetching music.
+     * @param musicProviderImpl the provider used for fetching music.
      * @return list containing {@link MediaSessionCompat.QueueItem}'s
      */
-    public static List<MediaSessionCompat.QueueItem> getRandomQueue(MusicProvider musicProvider) {
+    public static List<MediaSessionCompat.QueueItem> getRandomQueue(MusicProviderImpl musicProviderImpl) {
         List<MediaMetadataCompat> result = new ArrayList<>(RANDOM_QUEUE_SIZE);
-        Iterable<MediaMetadataCompat> shuffled = musicProvider.getShuffledMusic();
+        Iterable<MediaMetadataCompat> shuffled = musicProviderImpl.getShuffledMusic();
         for (MediaMetadataCompat metadata: shuffled) {
             if (result.size() == RANDOM_QUEUE_SIZE) {
                 break;
