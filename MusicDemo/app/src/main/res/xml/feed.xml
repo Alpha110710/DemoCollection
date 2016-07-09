@@ -1,0 +1,1909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+    version="2.0">
+    <channel>
+        <title>内核恐慌</title>
+        <itunes:subtitle></itunes:subtitle>
+
+        <link>https://ipn.li/kernelpanic/</link>
+        <atom:link
+            href="https://ipn.li/kernelpanic/feed"
+            rel="self"
+            type="application/rss+xml" />
+        <itunes:new-feed-url>http://ipn.li/kernelpanic/feed</itunes:new-feed-url>
+        <description>《内核恐慌》(Kernel Panic) 是由 IPN 出品、吴涛和 Rio 做的播客，首播于 2014 年 10
+            月。号称硬核，可也没什么干货。想听的人听，不想听的人就别听。
+        </description>
+        <language>zh-CN</language>
+        <itunes:category text="Technology" />
+        <itunes:image href="http://ipn.li/upload/icon-v1/icon-kernelpanic-1800.png" />
+        <itunes:keywords>IPN,Kernel Panic,内核恐慌,Kernel,Panic,内核,恐慌</itunes:keywords>
+        <itunes:explicit></itunes:explicit>
+        <itunes:author>IPN</itunes:author>
+        <itunes:owner>
+            <itunes:name>IPN</itunes:name>
+            <itunes:email>hi@ipn.li</itunes:email>
+        </itunes:owner>
+
+        <item>
+            <title>#40: 迟到的 Google I/O 专题</title>
+            <description>
+                <![CDATA[<p>这期是在 Google I/O 之后、WWDC 之前录的，迟到为歉。部分信息已经过时，请诸君明察。</p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<h2>登场人物</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a>程序员，《<a href="http://kernelpanic.fm">内核恐慌</a>》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/40</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/40</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Tue, 28 Jun 2016 04:46:52 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/40/audio.mp3"></enclosure>
+            <itunes:duration>6773</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#39: Kerning Panic · 字谈字串（一）</title>
+            <description>
+                <![CDATA[<p>本期是与 <a href="http://typeisbeautiful.com">Typeisbeautiful.com</a> 的 podcast<a href="http://www.typeisbeautiful.com/category/podcast/">《字谈字畅》</a>的联合节目，大致介绍了从用户按下键盘到屏幕上显示出文字的过程，为后续节目提纲挈领。</p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%BE%8E%E8%8C%B5%E6%B2%B3%E7%95%94%E6%B3%95%E8%98%AD%E5%85%8B%E7%A6%8F">美茵河畔法兰克福</a>（Frankfurt am Main），德国西部黑森州法兰克福的全称，区别于东部奥得河畔法兰克福（Frankfurt an der Oder）</li>
+<li>吴涛、Eric 合译<a href="http://www.typeisbeautiful.com/just-my-type/">《字体故事：西文字体的美丽传奇》</a></li>
+<li><a href="https://ipn.li/kernelpanic/18/">编码</a>，《内核恐慌》第 18 期</li>
+<li><a href="https://ipn.li/kernelpanic/2/">键盘恐慌</a>，《内核恐慌》第 2 期</li>
+<li><a href="https://en.wikipedia.org/wiki/File:ANSI_Keyboard_Layout_Diagram_with_Form_Factor.svg">ANSI 键盘布局</a>、<a href="https://en.wikipedia.org/wiki/File:KB_United_Kingdom.svg">ISO 键盘布局</a>以及 <a href="https://en.wikipedia.org/wiki/File:KB_Japanese.svg">JIS 键盘布局</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ASCII">ASCII</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%BA%94%E7%AC%94%E5%AD%97%E5%9E%8B%E8%BE%93%E5%85%A5%E6%B3%95#/media/File:5strokes.jpg">五笔字形输入法键位</a></li>
+<li><a href="http://www.pfu.fujitsu.com/hhkeyboard/">HHKB (Happy Hacking Keyboard)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/QWERTY">QWERY</a> 和 <a href="https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard">Dvorak（德沃夏克）</a>键盘布局</li>
+<li>键盘扫描码（<a href="https://www.win.tue.nl/~aeb/linux/kbd/scancodes.html">keyboard scancodes</a>）</li>
+<li><a href="https://en.wikipedia.org/wiki/PS/2_port">PS/2 接口</a></li>
+<li><a href="http://www.usb.org/developers/hidpage">USB Human Interface Devices (HID)</a></li>
+<li><a href="https://ja.wikipedia.org/wiki/%E6%B2%A2%E5%B0%BB%E3%82%A8%E3%83%AA%E3%82%AB">沢尻エリカ</a>（ERIKA），日本艺人，中文名依本人意愿写作「泽尻英龙华」</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E4%BA%94%E7%A2%BC">Big5</a>，港澳台较常用的编码</li>
+<li><a href="https://en.wikipedia.org/wiki/Hong_Kong_Supplementary_Character_Set">HKSCS</a>（Hong Kong Supplementary Character Set，香港增补字符集）、MAC（Macao Information System Character Set，澳门资讯系统字集）</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%8C%BA%E4%BD%8D%E7%A0%81_(%E5%9B%BD%E6%A0%87">区位码</a>)、<a href="https://en.wikipedia.org/wiki/Chinese_telegraph_code">中文电报码</a>和<a href="https://zh.wikipedia.org/wiki/%E5%9B%9B%E8%A7%92%E5%8F%B7%E7%A0%81">四角号码</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Code_page">Code page</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Byte_order_mark">BOM (byte order mark)</a></li>
+<li>强（<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=5F3A">U+5F3A</a>）、強（<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=5F37">U+5F37</a>）</li>
+<li><a href="https://ja.wikipedia.org/wiki/%E7%B5%B5%E6%96%87%E5%AD%97">絵文字</a>（<a href="https://en.wikipedia.org/wiki/Emoji">emoji</a>）、<a href="https://ja.wikipedia.org/wiki/%E9%A1%94%E6%96%87%E5%AD%97">顔文字</a>（<a href="https://en.wikipedia.org/wiki/Emoticon">emoticon</a>）</li>
+<li><a href="https://en.wikipedia.org/wiki/ASCII_art">ASCII art</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fixedsys">Fixedsys</a>，微软开发的等宽点阵字体</li>
+<li><a href="https://www.microsoft.com/typography/fonts/family.aspx?FID=245">MingLiU</a>，微软开发的繁体中文明体</li>
+<li><a href="https://www.microsoft.com/typography/TrueTypeHintingWhat.mspx">Hinting</a>（渲染提示），<a href="https://en.wikipedia.org/wiki/Anti-aliasing">anti-aliasing</a>（抗混叠 / 抗锯齿）</li>
+<li><a href="https://www.microsoft.com/en-us/Typography/ClearTypeInfo.aspx">ClearType</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dots_per_inch">DPI (dots per inch)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/TrueType">TrueType</a> 和 <a href="https://en.wikipedia.org/wiki/OpenType">OpenType</a></li>
+<li>Adobe PostScript 字体类型 <a href="https://en.wikipedia.org/wiki/PostScript_fonts#Type_1">Type 1</a> 和 <a href="https://en.wikipedia.org/wiki/PostScript_fonts#Type_3">Type 3</a></li>
+<li><a href="https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6AATIntro.html">Apple Advanced Typography</a></li>
+<li><a href="https://ja.wikipedia.org/wiki/%E5%85%A8%E8%A7%92%E3%81%A8%E5%8D%8A%E8%A7%92">全角和半角</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Adobe_Type_Manager">ATM (Adobe Type Manager)</a></li>
+</ul>
+
+<h2>登场人物</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a>程序员，《<a href="http://kernelpanic.fm">内核恐慌</a>》主播。<br/>
+Eric：字体排印研究者，译者，Type is Beautiful 编辑<br/>
+蒸鱼：设计师，Type is Beautiful 编辑</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/39</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/39</guid>
+            <author>Rio,吴涛,Eric,蒸鱼</author>
+            <pubDate>Mon, 16 May 2016 19:12:36 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/39/audio.mp3"></enclosure>
+            <itunes:duration>7856</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#38: Hit the Kernel Panic Button</title>
+            <description>
+                <![CDATA[<p>本期的口号是：<em>They have computers, and they may have other weapons of mass destruction</em>.</p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Aegis_Combat_System">宙斯盾系统</a></li>
+<li><a href="http://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/">NPM Left Pad Chaos</a></li>
+<li><a href="https://en.wikipedia.org/wiki/On-board_diagnostics#OBD-II">OBD-II 车辆状态监测</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a>程序员，《<a href="http://kernelpanic.fm">内核恐慌</a>》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/38</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/38</guid>
+            <author>Rio,吴涛</author>
+            <pubDate>Sun, 24 Apr 2016 16:39:37 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/38/audio.mp3"></enclosure>
+            <itunes:duration>5947</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#37: 没有主题的闲聊</title>
+            <description>
+                <![CDATA[<p>Rio 买了他的 scooter computer；几条新闻；AlphaGo。</p>
+
+<p>本期的口号是：<em>to iterate is human, to recurse divine</em>.</p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/L_Peter_Deutsch">Laurence Peter Deutsch</a></li>
+<li><a href="http://www.asrock.com/microsite/beebox/">BeeBox</a></li>
+<li><a href="http://arstechnica.com/gadgets/2016/03/western-digital-makes-a-46-314gb-hard-drive-just-for-the-raspberry-pi/">Western Digital Makes A $46, 314 GB Hard Drive Just fot the Raspberry Pi</a></li>
+<li><a href="https://blogs.microsoft.com/blog/2016/03/07/announcing-sql-server-on-linux/">SQL Server on Linux</a></li>
+<li><a href="http://www.wired.com/2016/03/epic-story-dropboxs-exodus-amazon-cloud-empire">The Epic Story of Dropbox’s Exodus From the Amazon Cloud Empire</a></li>
+<li><a href="https://news.ycombinator.com/item?id=11283958">atYevP 在 Hacker News 上面对于 Rio 评论的回复</a></li>
+<li><a href="http://www.adultswim.com/videos/rick-and-morty/">Rick and Morty</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a>程序员，《<a href="http://kernelpanic.fm">内核恐慌</a>》主播</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/37</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/37</guid>
+            <author>Rio,吴涛</author>
+            <pubDate>Tue, 22 Mar 2016 01:38:14 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/37/audio.mp3"></enclosure>
+            <itunes:duration>6170</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#36: 没有主题的闲聊</title>
+            <description>
+                <![CDATA[<p>Rio 的新节目，听众反馈，几条新闻。</p>
+
+<p>本期的口号是：<em>Nine people can’t make a baby in a month</em>.</p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://theconversation.com/raspberry-pi-3-shows-its-possible-to-pack-even-more-punch-into-a-tiny-package-51524">Raspberry Pi 3</a></li>
+<li><a href="http://www.anandtech.com/show/10096/microsoft-ends-effort-to-bring-android-apps-to-windows-10-mobile">Microsoft Ends Effort to Bring Android Apps to Windows 10 Mobile</a></li>
+<li><a href="http://www.wired.com/2016/02/microsoft-expands-empire-beyond-windows-xamarin-buy/">Microsoft bought Xamarin to Bring C# to iOS and Android</a></li>
+<li><a href="https://github.com/apple/swift/pull/1442">Swift: Port to Android #1442</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a>程序员，《<a href="http://kernelpanic.fm">内核恐慌</a>》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/36</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/36</guid>
+            <author>Rio,吴涛</author>
+            <pubDate>Sun, 06 Mar 2016 01:23:28 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/36/audio.mp3"></enclosure>
+            <itunes:duration>4079</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#35: 没有主题的闲聊</title>
+            <description>
+                <![CDATA[<p>逆向海淘就能获得比较好的 UI，Jeff Atwood 的 scooter computer 概念，Rio 在用 Go 写 VPN，Swift 库的新面貌，Parse 要关了，GitHub 可别。</p>
+
+<p>本期的口号是：<em>That’s the thing about people who think they hate computers. What they really hate is lousy programmers</em>.</p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://www.aliexpress.com/">AliExpress</a></li>
+<li><a href="http://global.rakuten.com/zh-cn/">乐天海外销售</a></li>
+<li><a href="http://blog.codinghorror.com/the-scooter-computer/">The Scooter Computer</a></li>
+<li><a href="https://blog.golang.org/go1.6">Go 1.6</a></li>
+<li><a href="https://swift.org/documentation/api-design-guidelines/">Swift API Design Guidelines</a></li>
+<li><a href="http://blog.parse.com/announcements/parse-server-push-notifications/">Parse Server Push Notifications</a></li>
+<li><a href="http://www.businessinsider.com/github-the-full-inside-story-2016-2">GitHub 公司结构调整</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a>程序员，《<a href="http://kernelpanic.fm">内核恐慌</a>》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/35</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/35</guid>
+            <author>Rio,吴涛</author>
+            <pubDate>Mon, 22 Feb 2016 11:18:17 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/35/audio.mp3"></enclosure>
+            <itunes:duration>5734</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#34: 本有主题但后来不得不变成没有主题的闲聊</title>
+            <description>
+                <![CDATA[<p>这一期本来的主题是「文件系统」。但是由于两位主持人无数次把自己绕进去，无法顺利地推进话题，不得不将录音剪辑成仅剩闲聊的部分。下一次一定录好。</p>
+
+<p>本期的口号是：<em>It only takes a single line of code to bring a system to its knees</em>.</p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<p>我们推荐您使用<a href="https://ipn.li/faq">泛用型播客客户端</a>订阅收听《内核恐慌》，但您也可以在<a href="http://www.ximalaya.com/#/23682075/album/2651147">喜马拉雅</a>、<a href="http://www.lizhi.fm/474221">荔枝 FM</a> 或<a href="http://music.163.com/#/djradio?id=1672010">网易云音乐</a>收听。</p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Computer_forensics">Computer forensics</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GIMPshop">GIMPshop</a></li>
+<li><a href="https://medium.com/@octskyward/the-resolution-of-the-bitcoin-experiment-dabb30201f7#.1iy0palsr">Mike Hearn 的文章「The resolution of the Bitcoin experiment」</a></li>
+<li><a href="https://medium.com/@bramcohen/whiny-ragequitting-cab164b1e88#.z5zbvk6ui">Bram Cohen 批评 Mike Hearn 的文章「Whiny Ragequitting」</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a>程序员，《<a href="http://kernelpanic.fm">内核恐慌</a>》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/34</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/34</guid>
+            <author>Rio,吴涛</author>
+            <pubDate>Tue, 26 Jan 2016 12:08:47 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/34/audio.mp3"></enclosure>
+            <itunes:duration>3387</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#33: 没有主题的闲聊</title>
+            <description>
+                <![CDATA[<p>新年快乐。两位主持人简短地讨论了一下近期的新鲜事，夹杂着大量闲聊。</p>
+
+<p>本期的口号是：<em>There are only two hard things in Computer Science: cache invalidation and naming things.</em></p>
+
+<p>勘误：吴涛把「portmanteau」念成了「paramanteau」。目前仍旧有些国家尚未使用格里历，详见维基条目 <a href="https://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar">Adoption of the Gregorian calendar</a>。</p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<p>我们推荐您使用<a href="https://ipn.li/faq">泛用型播客客户端</a>订阅收听《内核恐慌》，但您也可以在<a href="http://www.ximalaya.com/#/23682075/album/2651147">喜马拉雅</a>、<a href="http://www.lizhi.fm/474221">荔枝 FM</a> 或<a href="http://music.163.com/#/djradio?id=1672010">网易云音乐</a>收听。</p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://anders.unix.se/2015/12/10/screenshots-from-developers--2002-vs.-2015/">二〇〇二与二〇一五年的桌面对比</a></li>
+<li><a href="https://github.com/riobard/go-acme">Rio 写的 Automated Certificate Management Environment 客户端</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Typographic_ligature">Ligature</a></li>
+<li><a href="https://github.com/tonsky/FiraCode">Fira Code</a></li>
+<li><a href="http://www.fsd.it/shop/fonts/pragmatapro/">Pragmata Pro</a></li>
+<li><a href="https://github.com/riobard/vim-cute-python">Rio 改的异端邪说项目 vim-cute-python</a></li>
+<li><a href="https://github.com/i-tu/Hasklig">Hasklig</a></li>
+<li><a href="https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=f076ef44a44d02ed91543f820c14c2c7dff53716">针对 Rockchip 日历缺陷的补丁说明</a></li>
+<li><a href="https://github.com/koekeishiya/kwm">Kwm 平铺窗口管理器</a></li>
+<li><a href="http://thenextweb.com/microsoft/2016/01/05/web-developers-rejoice-internet-explorer-8-9-and-10-die-on-tuesday/">IE 8、9、10 将于一月十二日（周二）过期</a></li>
+<li><a href="http://ryanselk.com/2015/05/19/terminals-in-neovim/">Terminals in Neovim</a></li>
+<li><a href="http://www.techtimes.com/articles/120620/20160102/debian-founder-and-open-source-visionary-ian-murdock-dies-at-42.htm">Ian Murdock 亡故</a>，其推特帐号已删除。</li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a>程序员，《<a href="http://kernelpanic.fm">内核恐慌</a>》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/33</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/33</guid>
+            <author>Rio,吴涛</author>
+            <pubDate>Sun, 10 Jan 2016 22:14:06 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/33/audio.mp3"></enclosure>
+            <itunes:duration>6347</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#32: 覃超专访（之二）</title>
+            <description>
+                <![CDATA[<p>接着上次的访谈，覃超给我们讲讲他经历的 Facebook Phone 项目诞生和放弃的过程，以及三进程 WebKit (OS?) 架构。本期相关链接不可错过。</p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<p>我们推荐您使用<a href="https://ipn.li/faq">泛用型播客客户端</a>订阅收听《内核恐慌》，但您也可以在<a href="http://www.ximalaya.com/#/23682075/album/2651147">喜马拉雅</a>、<a href="http://www.lizhi.fm/474221">荔枝 FM</a> 或<a href="http://music.163.com/#/djradio?id=1672010">网易云音乐</a>收听。</p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Segment_tree">线段树 (segment tree)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Lars_Rasmussen_%28software_developer%29">Lars Rasmussen</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Kent_Beck">Kent Beck</a></li>
+<li><a href="https://en.wikipedia.org/wiki/JUnit">JUnit</a></li>
+<li><a href="http://phabricator.org">Phabricator</a></li>
+<li><a href="http://www.iheima.com/space/2015/1208/153130.shtml">徐万鸿：我已经没法看完所有朋友圈内容了</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chris_Cox_%28Facebook%29">Chris Cox</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Facebook_features#Photos">Facebook Photos</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Face.com">Face.com</a></li>
+<li><a href="https://www.zhihu.com/question/19682869/answer/14398439">张小龙关于用户体验的回答</a></li>
+<li><a href="http://davidwei.org/">魏小亮</a></li>
+<li><a href="http://www.douban.com/group/topic/2362483/">粟耀莹：《从加州理工到高盛银行》</a></li>
+<li>Slayer, Buffy, Sputnik</li>
+<li><a href="http://v.youku.com/v_show/id_XODA5NDEyMzQ0.html">Zuckerberg 清华演讲视频</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Glass_ceiling">Glass ceiling</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Metro_%28design_language%29">Metro UI</a></li>
+<li><a href="http://www.papakipos.com">Matthew Papakipos</a></li>
+<li><a href="http://joehewitt.com">Joe Hewitt</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bret_Taylor">Bret Taylor</a></li>
+<li><a href="http://www.tornadoweb.org/en/stable/">Tornado Web Server</a></li>
+<li><a href="https://webkit.org/">WebKit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/V8_%28JavaScript_engine%29">V8 JavaScript engine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Web_worker">WebWorker</a></li>
+<li><a href="https://facebook.github.io/react/">React</a></li>
+<li><a href="https://facebook.github.io/react/docs/glossary.html">React Virtual DOM</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Facebook_Home">Facebook Home</a></li>
+<li><a href="https://quip.com">Quip</a></li>
+<li><a href="https://plus.google.com/">Google+</a></li>
+<li><a href="https://en.wikipedia.org/wiki/George_Hotz">George Hotz</a></li>
+<li><a href="http://tshe.me/c/c8860b8d">覃超众筹 T-shirt 求支持</a></li>
+<li><a href="http://baike.baidu.com/item/赵海平/17503295">赵海平</a></li>
+<li><a href="http://techcrunch.com/2010/09/19/facebook-is-secretly-building-a-phone/">Michael Arrington 在 TechCrunch 上关于 Facebook Phone 的报道</a></li>
+<li><a href="https://www.messenger.com">Facebook Messenger</a></li>
+<li><a href="http://mashable.com/2011/04/20/obama-facebook-photos/">奥巴马访问 Facebook 总部</a></li>
+<li><a href="http://www.businessinsider.com/people-at-obamas-tech-dinner-2011-2">奥巴马硅谷宴会照片</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人<br/>
+覃超：FreeS 技术合伙人，创业者，前 Facebook 工程师</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/32</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/32</guid>
+            <author>Rio,覃超</author>
+            <pubDate>Mon, 04 Jan 2016 08:13:11 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/32/audio.mp3"></enclosure>
+            <itunes:duration>4757</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#31: 覃超专访（之一）</title>
+            <description>
+                <![CDATA[<p>本期我们请到了覃超，聊聊他去卡耐基梅隆大学 (CMU) 念书以及加入 Facebook 的故事。</p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<p>我们推荐您使用<a href="https://ipn.li/faq">泛用型播客客户端</a>订阅收听《内核恐慌》，但您也可以在<a href="http://www.ximalaya.com/#/23682075/album/2651147">喜马拉雅</a>、<a href="http://www.lizhi.fm/474221">荔枝 FM</a> 或<a href="http://music.163.com/#/djradio?id=1672010">网易云音乐</a>收听。</p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://www.zhihu.com/people/qin.chao">覃超的知乎个人页面</a></li>
+<li><a href="http://tshe.me/c/c8860b8d">覃超自己发明的 T-shirt 求支持</a></li>
+<li><a href="https://www.freesvc.com">峰瑞资本</a></li>
+<li><a href="http://zhuanlan.zhihu.com/qinchao/19873823">覃超：《Facebook，Google，Microsoft 面试记录》</a></li>
+<li><a href="http://zhuanlan.zhihu.com/qinchao/19888566">覃超：《从美东到美西, 从CMU到Facebook!》</a></li>
+<li><a href="http://zhuanlan.zhihu.com/qinchao/19942374">覃超：《Forever 24——24岁那年的回忆》
+</a></li>
+<li><a href="https://www.zhihu.com/question/20279546/answer/14598130">覃超：《第一次去硅谷的感受》</a></li>
+<li><a href="http://zhuanlan.zhihu.com/qinchao/20423544">覃超：《遥想小魔王的计算机竞赛峥嵘岁月——附楼天成回忆录》</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员<br/>
+覃超：FreeS 技术合伙人，创业者，前 Facebook 工程师</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/31</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/31</guid>
+            <author>Rio,覃超</author>
+            <pubDate>Sat, 26 Dec 2015 06:00:41 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/31/audio.mp3"></enclosure>
+            <itunes:duration>4831</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#30: 没有主题的闲聊</title>
+            <description>
+                <![CDATA[<p>关于 MinGW 和 Wi-Fi 的听众反馈，然后讨论了初学者如何面对 Linux 操作系统，最后讨论了几条新闻。</p>
+
+<p>本期的口号是：<em>Show me a pull request, or STFU.</em></p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<p>我们推荐您使用<a href="https://ipn.li/faq">泛用型播客客户端</a>订阅收听《内核恐慌》，但您也可以在<a href="http://www.ximalaya.com/#/23682075/album/2651147">喜马拉雅</a>、<a href="http://www.lizhi.fm/474221">荔枝 FM</a> 或<a href="http://music.163.com/#/djradio?id=1672010">网易云音乐</a>收听。</p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://twitter.com/karliekloss/status/668803565213851648">Karlie Kloss 在 SpaceX 的照片</a></li>
+<li><a href="https://github.com/apple/swift">GitHub 上的苹果 Swift 项目</a></li>
+<li><a href="https://letsencrypt.org/2015/12/03/entering-public-beta.html">Let’s Encrypt 公测</a></li>
+<li><a href="http://www.internetnews.com/blog/skerner/is-php-6-or-php-7-next.html">Is PHP 6 or PHP 7 Next?</a></li>
+<li><a href="https://philsturgeon.uk/php/2013/01/26/php-6-pissing-in-the-wind/">PHP6: Pissing in the Wind</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Benevolent_dictator_for_life">BDFL</a></li>
+<li><a href="http://news.php.net/php.internals/64770">PHP 邮件组里的一封信</a></li>
+<li><a href="http://php.net/manual/en/migration70.new-features.php">PHP 7 新特性</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a>程序员，《<a href="http://kernelpanic.fm">内核恐慌</a>》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/30</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/30</guid>
+            <author>Rio,吴涛</author>
+            <pubDate>Sat, 12 Dec 2015 14:17:20 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/30/audio.mp3"></enclosure>
+            <itunes:duration>6305</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#29: Terminal Emulators</title>
+            <description>
+                <![CDATA[<p>本期补充了上期未能涉及的终端仿真器（terminal emulator），然后讨论了几则新闻。</p>
+
+<p>本期的口号是：<em>Everything is theoretically impossible, until it is done.</em></p>
+
+<p>Rio 开始提供双向求职服务啦，欢迎求职者及应聘公司发信到 talent@riobard.com</p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<p>我们推荐您使用<a href="https://ipn.li/faq">泛用型播客客户端</a>订阅收听《内核恐慌》，但您也可以在<a href="http://www.ximalaya.com/#/23682075/album/2651147">喜马拉雅</a>、<a href="http://www.lizhi.fm/474221">荔枝 FM</a> 或<a href="http://music.163.com/#/djradio?id=1672010">网易云音乐</a>收听。</p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://github.com/elves/elvish">Elvish shell</a></li>
+<li><a href="http://www.linusakesson.net/programming/tty/index.php">TTY demystified</a></li>
+<li><a href="http://sourceforge.net/projects/rxvt/">RXVT</a></li>
+<li><a href="http://gnometerminator.blogspot.com/p/introduction.html">Terminator</a></li>
+<li><a href="https://github.com/Guake/guake">Guake</a></li>
+<li><a href="https://www.iterm2.com/">iTerm</a></li>
+<li><a href="http://www.dalverson.com/zterm/">ZTerm</a></li>
+<li><a href="http://www.mingw.org/">MinGW</a></li>
+<li><a href="https://www.cygwin.com/">Cygwin</a></li>
+<li><a href="https://github.com/microsoft/vscode">Visual Studio Code repository on GitHub</a></li>
+<li><a href="https://developer.wordpress.com/2015/11/23/the-story-behind-the-new-wordpress-com/">The Story behind the new wordpress.com</a></li>
+<li><a href="https://www.raspberrypi.org/blog/raspberry-pi-zero/">Raspberry Pi Zero</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a>程序员，《<a href="http://kernelpanic.fm">内核恐慌</a>》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/29</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/29</guid>
+            <author>Rio,吴涛</author>
+            <pubDate>Sun, 29 Nov 2015 03:11:57 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/29/audio.mp3"></enclosure>
+            <itunes:duration>6586</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#28: In the Beginning was the Command Line</title>
+            <description>
+                <![CDATA[<p>简短的读者反馈和新闻之后两人花费了大量时间来回顾 command line/shell 的历史，以及讨论它为什么重要。</p>
+
+<p>本期的口号是：<em>It is easier to port a shell than a shell script.</em></p>
+
+<p>本期节目的剪辑在 iPad Air 2 上使用 Ferrite Recording Studio 完成。</p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://www.theatlantic.com/technology/archive/2015/11/programmers-should-not-call-themselves-engineers/414271/">Programmers Should Not Call Themselves Engineers</a></li>
+<li><a href="http://flutter.io/faq/">Flutter</a></li>
+<li><a href="http://0.30000000000000004.com/">0.30000000000000004.com</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Teleprinter">Teletype</a>、<a href="https://en.wikipedia.org/wiki/Teletype_Model_33">Teletype Model 33</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Acoustic_coupler">Acoustic Coupler</a></li>
+<li><a href="http://www.multicians.org/history.html">Multics</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bourne_shell">sh</a>、<a href="https://en.wikipedia.org/wiki/C_shell">csh</a>、<a href="https://en.wikipedia.org/wiki/Korn_shell">ksh</a>、<a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">bash</a>、<a href="https://en.wikipedia.org/wiki/Almquist_shell">ash / dash</a>、<a href="https://en.wikipedia.org/wiki/Z_shell">zsh</a>、<a href="https://gnp.github.io/psh/">psh</a>、<a href="http://yash.osdn.jp/">yash</a>、<a href="http://fishshell.com/">fish</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Unix_wars">Unix Wars</a></li>
+<li><a href="http://unix.stackexchange.com/questions/145522/what-does-it-mean-to-be-sh-compatible">What does it mean to be sh compatible?</a></li>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh">Oh My Zsh</a></li>
+<li><a href="https://wiki.ubuntu.com/DashAsBinSh">Dash as /bin/sh</a></li>
+<li><a href="http://brew.sh/">Homebrew</a></li>
+<li><a href="https://github.com/busyloop/lolcat">lolcat</a></li>
+<li><a href="http://jonas.nitro.dk/tig/">tig: text-mode interface for Git</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cowsay">cowsay</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fortune_cookie">Fortune cookie</a></li>
+<li><a href="http://ipython.org/">IPython</a></li>
+<li><a href="http://bpython-interpreter.org/">bpython</a></li>
+<li><a href="http://pryrepl.org/">pry</a></li>
+<li><a href="http://mama.indstate.edu/users/ice/tree/">tree</a></li>
+<li><a href="https://tmux.github.io/">tmux</a></li>
+<li><a href="http://hisham.hm/htop/">htop</a></li>
+<li><a href="https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/pbcopy.1.html">pbcopy, pbpaste</a>、<a href="https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/open.1.html">open</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a>程序员，《<a href="http://kernelpanic.fm">内核恐慌</a>》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/28</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/28</guid>
+            <author>Rio,吴涛</author>
+            <pubDate>Sat, 14 Nov 2015 22:47:30 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/28/audio.mp3"></enclosure>
+            <itunes:duration>8369</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#27: And You Have to Support It for the Rest of Your Life</title>
+            <description>
+                <![CDATA[<p>本期没有主题。听众反馈之后讨论了 Surge、网易账户泄漏事件、El Captain System Integrity Protection、Perl 6、和 Let’s Encrypt。</p>
+
+<p>本期的口号是：<em>Programming is like sex. One mistake and you have to support it for the rest of your life.</em></p>
+
+<p>勘误：唐宗汉变性后的名字叫做唐凤。</p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://www.economist.com/news/briefing/21674712-children-bear-disproportionate-share-hidden-cost-chinas-growth-little-match-children">Economist 关于中国留守儿童的报道</a></li>
+<li><a href="https://www.v2ex.com/t/228987">V2EX 上面第26期的反馈</a></li>
+<li><a href="https://www.youtube.com/watch?v=VDSxUYnDTJU">“I’d love a Benchmade model 42 butterfly knife.”</a></li>
+<li><a href="https://github.com/jonas/tig">Tig: text-mode interface for Git</a></li>
+<li><a href="http://richard.esplins.org/static/downloads/unix-haters-handbook.pdf">The UNIX-HATERS Handbook</a></li>
+<li><a href="https://medium.com/@Blankwonder/surge-%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0-8aa3304fb3bb#.taikomsco">Surge 原理</a></li>
+<li><a href="http://flif.info">FLIF</a></li>
+<li><a href="http://www.wooyun.org/bugs/wooyun-2015-0147763">乌云网易漏洞报告</a></li>
+<li><a href="http://arstechnica.com/security/2015/09/nerves-rattled-by-highly-suspicious-windows-update-delivered-worldwide/">Windows 7 Update misfire</a></li>
+<li><a href="http://arstechnica.com/apple/2015/09/os-x-10-11-el-capitan-the-ars-technica-review/8/#h1">OS X El Capitan System Integrity Protection</a></li>
+<li><a href="http://design.perl6.org/Differences.html">Perl 5 与 Perl 6 的差异</a></li>
+<li><a href="https://letsencrypt.org/2015/10/19/lets-encrypt-is-trusted.html">Let’s Encrypt Is Trusted</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/27</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/27</guid>
+            <author>Rio,吴涛</author>
+            <pubDate>Sun, 01 Nov 2015 07:12:33 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/27/audio.mp3"></enclosure>
+            <itunes:duration>6088</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#26: Livid 专访</title>
+            <description>
+                <![CDATA[<p>本期我们请到了 Livid，一起聊他作为程序员、V2EX 站长和创业者的成长经历。</p>
+
+<p>本期的口号是：<em>Laziness, impatience, and hubris</em>.</p>
+
+<p>《内核恐慌》网站：<a href="https://kernelpanic.fm">https://kernelpanic.fm</a> ，捐款地址：<a href="https://kernelpanic.fm/donate">https://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://www.zhihu.com/question/19577697">知乎上的问题「Livid 是谁」</a></li>
+<li><a href="http://v2ex.com/">v2ex.com</a></li>
+<li><a href="https://cloud.google.com/appengine/pricing">目前 Google App Engine 的计费方法</a></li>
+<li><a href="https://www.digitalocean.com">Digital Ocean</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Kijiji">Kijiji</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Electronic_Entertainment_Expo_2012">E3 2012</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Battlefield:_Bad_Company_2">Battlefield: Bad Company 2</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。<br/>
+Livid: V2EX 创始人。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/26</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/26</guid>
+            <author>Rio,吴涛,Livid</author>
+            <pubDate>Sun, 18 Oct 2015 09:21:40 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/26/audio.mp3"></enclosure>
+            <itunes:duration>7083</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#25: Hyper.sh</title>
+            <description>
+                <![CDATA[<p>Hyper 是一款基于虚拟机的 Docker 替代引擎。本期我们邀请到了 Hyper 项目的创始成员、前 SUN 工程师薛磊（Simon）来聊一聊这款新工具。</p>
+
+<p>《内核恐慌》网站：<a href="http://kernelpanic.fm">http://kernelpanic.fm</a> ，捐款地址：<a href="http://kernelpanic.fm/donate">http://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://hyper.sh">Hyper.sh</a></li>
+<li><a href="https://github.com/hyperhq/hyper">Hyper on GitHub</a></li>
+<li><a href="https://hyper.sh/jobs.html">Jobs at Hyper</a></li>
+<li><a href="https://github.com/riobard/go-virtualbox">Rio 写的 <code>go-virtualbox</code> 库</a></li>
+<li><a href="https://www.docker.com">Docker</a></li>
+<li><a href="http://www.linux-kvm.org/">KVM</a></li>
+<li><a href="http://www.xenproject.org">Xen</a></li>
+<li><a href="https://coreos.com">CoreOS</a></li>
+<li><a href="https://clearlinux.org">Clear Linux</a></li>
+<li><a href="http://kubernetes.io">Kubernetes</a></li>
+<li><a href="https://www.packet.net">Packet</a></li>
+<li><a href="https://www.virtualbox.org">VirtualBox</a></li>
+<li><a href="http://boot2docker.io">boot2docker</a></li>
+<li><a href="https://github.com/boot2docker/boot2docker-cli">Rio 写的 boot2docker 命令行工具（已 deprecated）</a></li>
+<li><a href="https://github.com/mist64/xhyve">xhyve</a></li>
+<li><a href="https://www.v2ex.com">V2EX</a></li>
+<li><a href="https://golang.org">Go 语言</a></li>
+</ul>
+
+<h2>人物介绍</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+薛磊：前 SUN 工程师，HyperHQ 创始成员／软件工程师</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/25</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/25</guid>
+            <author>Rio,薛磊</author>
+            <pubDate>Sun, 04 Oct 2015 05:37:12 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/25/audio.mp3"></enclosure>
+            <itunes:duration>4839</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#24: XcodeGhost</title>
+            <description>
+                <![CDATA[<p>过了一个月两个人都不太记得上次说过些什么了。听众反馈与业界新闻评论之后讨论了此次 XcodeGhost 事件。</p>
+
+<p>本期的口号是：<em>Trust no one. Even your compiler.</em></p>
+
+<p>《内核恐慌》网站：<a href="http://kernelpanic.fm">http://kernelpanic.fm</a> ，捐款地址：<a href="http://kernelpanic.fm/donate">http://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://root.cern.ch/">CERN Root</a></li>
+<li><a href="http://www.1k3c.com">Ryan Carmack 主页</a></li>
+<li><a href="https://twitter.com/mxcl/status/633297285296754689">Max Howell 在苹果公司门前的自拍</a></li>
+<li><a href="https://facebook.github.io/react-native/">React Native</a></li>
+<li><a href="http://ihnatko.com/2015/09/16/im-achmed-except-im-not-brown/">Achmed 的故事</a></li>
+<li><a href="https://nakedsecurity.sophos.com/2009/08/18/compileavirus/">Delphi 7 的病毒</a></li>
+<li><a href="http://www.cnbeta.com/articles/171116.htm">PuTTY 中文版后门</a></li>
+<li><a href="http://cr.yp.to/qmail/qmailsec-20071101.pdf">Daniel J. Bernstein “Some thoughts on security after ten years of qmail 1.0”</a></li>
+<li><a href="https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf">Ken Thompson “Reflections on Trusting Trust</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/24</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/24</guid>
+            <author>吴涛,不鸟万 Rio</author>
+            <pubDate>Mon, 21 Sep 2015 13:41:45 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/24/audio.mp3"></enclosure>
+            <itunes:duration>6895</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#23: 程序员之路</title>
+            <description>
+                <![CDATA[<p>读者声讨开发板的回馈；新闻包括 Gamescom （以及两位主持人为什么不玩 LoL）、微软的 Objective C API 开源、Cherry 的新红轴静音机械键盘；主题是程序员的自我修养。</p>
+
+<p>《内核恐慌》网站：<a href="http://kernelpanic.fm">http://kernelpanic.fm</a> ，捐款地址：<a href="http://kernelpanic.fm/donate">http://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://os.cs.tsinghua.edu.cn/oscourse/ucore4edison">清华大学2015年操作系统课课程设计：Intel Edison 上的 ucore+ 移植</a></li>
+<li><a href="http://blog.farmostwood.net">木遥的窗子</a></li>
+<li><a href="http://www.lizhi.fm/1347950/">木遥的桌子</a></li>
+<li><a href="http://eu.battle.net/heroes/en/">Heroes of the Storm</a></li>
+<li><a href="http://arstechnica.com/information-technology/2015/08/microsoft-open-sources-most-of-its-ios-apps-on-windows-compatibility-layer/">Microsoft open sources (most of) its iOS-apps-on-Windows compatibility layer</a></li>
+<li><a href="http://www.anandtech.com/show/9498/corsair-and-cherry-introduce-new-quieter-mechanical-keyboard-switches">Corsair and Cherry Introduce New, Quieter Mechanical Keyboard Switches</a></li>
+<li><a href="https://twitter.com/mxcl/status/608682016205344768">Google: 90% of our engineers use the software you wrote (Homebrew), but you can’t invert a binary tree on a whiteboard so fuck off.</a></li>
+<li><a href="https://leetcode.com/">Leetcode</a></li>
+<li><a href="https://projecteuler.net/">Project Euler</a></li>
+<li><a href="https://www.elance.com/">Elance</a></li>
+<li><a href="https://www.topcoder.com/">Topcoder</a></li>
+<li><a href="http://www.amazon.com/Being-Geek-Software-Developers-Handbook/dp/0596155409"><em>Being Geek: The Software Developer’s Career Handbook</em></a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/23</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/23</guid>
+            <author>吴涛,不鸟万 Rio</author>
+            <pubDate>Sun, 09 Aug 2015 15:44:26 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/23/audio.mp3"></enclosure>
+            <itunes:duration>8159</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#22: 开发板</title>
+            <description>
+                <![CDATA[<p>两位主持人对 web 开发的态度；新闻是 Jeep 车被黑事件（更新：克莱斯勒已经宣布召回一百五十万辆汽车修复漏洞）；主题是微处理器开发板。</p>
+
+<p>《内核恐慌》网站：<a href="http://kernelpanic.fm">http://kernelpanic.fm</a> ，捐款地址：<a href="http://kernelpanic.fm/donate">http://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://www.wired.com/2015/07/hackers-remotely-kill-jeep-highway/">Jeep 汽车被黑</a></li>
+<li><a href="https://www.arduino.cc/">Arduino</a></li>
+<li><a href="https://www.youtube.com/watch?v=aBhF_qfG4Qc">Detect Train and Close Window with Arduino and Webcam</a> (YouTube 视频。吴涛的记忆有误，此处并未采用声音探测器，而是摄像头)</li>
+<li><a href="https://www.raspberrypi.org/">Raspberry Pi</a></li>
+<li><a href="http://beagleboard.org/">BeagleBoard</a></li>
+<li><a href="http://www.bananapi.org/">Banana Pi</a></li>
+<li><a href="http://segmentfault.com/a/1190000000451314">Raspberry Pi “树莓派”: 概述与优势(上)</a>、<a href="http://segmentfault.com/a/1190000000465449">(下)</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/22</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/22</guid>
+            <author>吴涛,不鸟万 Rio</author>
+            <pubDate>Sun, 26 Jul 2015 00:54:46 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/22/audio.mp3"></enclosure>
+            <itunes:duration>7369</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#21: Debugging</title>
+            <description>
+                <![CDATA[<p>就着听众反馈，两位主持人介绍了自己管理密码的习惯；新闻包括 Hacking Team 的大泄密、Atom 1.0、以及卡马克在 VR 世界里跑 Racket 的野心。主题是 debugging——程序除错与调试。</p>
+
+<p>《内核恐慌》网站：<a href="http://kernelpanic.fm">http://kernelpanic.fm</a> ，捐款地址：<a href="http://kernelpanic.fm/donate">http://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://lucida.me/blog/whiteboard-coding-demystified/">Lucida 「白板编程浅谈——Why, What, How」</a></li>
+<li><a href="http://www.wired.com/2015/07/hacking-team-shows-world-not-stockpile-exploits/">Wired 杂志对于 Hacking Team 泄密案的报道</a></li>
+<li><a href="http://www.redmondpie.com/disable-flash-in-chrome-firefox-safari-other-web-browsers-to-keep-your-pc-safe-from-vulnerabilities/">在浏览器中禁用 Flash 的方法</a></li>
+<li><a href="http://blog.atom.io/2015/06/25/atom-1-0.html">Atom Editor 1.0</a></li>
+<li><a href="https://www.youtube.com/watch?v=jFWLkthDvuc">Prediction of the Home Computer (1960’s)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Debugging#Origin">维基百科对于 Debug 一词由来的解释</a></li>
+<li><a href="http://www.quora.com/Whats-the-hardest-bug-youve-debugged">Quora 上的问题「遇到过最难解的 bug」</a></li>
+<li><a href="http://valgrind.org/">Valgrind</a></li>
+<li><a href="https://www.jetbrains.com/pycharm/help/stepping-through-the-program.html">PyCharm</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/21</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/21</guid>
+            <author>吴涛,不鸟万 Rio</author>
+            <pubDate>Sun, 12 Jul 2015 19:22:46 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/21/audio.mp3"></enclosure>
+            <itunes:duration>8498</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#20: 设计模式</title>
+            <description>
+                <![CDATA[<p>「串台」故障的原因终于揭晓；吴涛的莫尔斯码 app 主意看来目前不可行；三封很长的读者反馈；主题是设计模式。两位主持人不约而同地病了，所以没有讲新闻。</p>
+
+<p>节目中提及的读者 Haozhong Zhang 来信节选：</p>
+
+<blockquote>
+<p>相对的，在 Formal Verification 中，举个例子，我们可以把每条指令的执行形式化表示成 {P}C{Q}，其中 C 是这条指令，P 称为前条件 (Pre-condition) 描述了 C 执行之前机器的状态 (例如某个寄存器的值是什么，某个内存单元的值是什么，通常不需要覆盖所有的寄存器和内存单元，仅需要根据验证的 Specification 选取我们关心的部分), Q 称为后条件 (Post-condition) 描述了 C 执行后的机器状态。注意，这里 Q 同时描述 C 被中断和不被中断的执行后的机器状态。非形式化的，{P}C{Q} 表示在满足前条件 P 的机器上执行指令 C 得到的机器状态满足后条件 Q。这样，对于上述的一个代码片段  C<sub>1</sub>; C<sub>2</sub>; …; C<sub>N</sub> 我们有  {P<sub>1</sub>}C<sub>1</sub>{Q<sub>1</sub>}，{P<sub>2</sub>}C<sub>2</sub>{Q<sub>2</sub>}, …, {P<sub>N</sub>}C<sub>N</sub>{Q<sub>N</sub>}。然后，我们证明 Q<sub>1</sub> ⇒ P<sub>2</sub>, …, Q<sub>N-1</sub> ⇒ P<sub>N</sub>，
+从而可以证明
+   {P<sub>1</sub>}C<sub>1</sub>; C<sub>2</sub>; …; C<sub>N</sub>{Q<sub>N</sub>}。
+同样的，如果这个代码片段的 Specification 也可以写成，例如，
+   {P}C<sub>1</sub>; C<sub>2</sub>; …; C<sub>N</sub>{Q}，
+我们只需要再证明
+   P ⇒ P<sub>1</sub> 和 Q<sub>N</sub> ⇒ Q，
+即可以证明这个代码片段的确满足了给定的 Specification。因为这里的 P，Q，P<sub>i</sub>, Q<sub>i</sub> 等描述了所有的可能情况，并且只需描述 Specification 关心的部分，所以这里的 Formal Verification 比测试更加完备和简洁。在实际工作中，我们往往会针对验证的程序的特点，设计特定的逻辑系统，以进一步的降低证明的难度和复杂度。</p>
+</blockquote>
+
+<p>《内核恐慌》网站：<a href="http://kernelpanic.fm">http://kernelpanic.fm</a> ，捐款地址：<a href="http://kernelpanic.fm/donate">http://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li>读者 Wang Jian 发来的 TDD 实践视频：<a href="https://youtu.be/HPYUi_wWsM4">YouTube</a>、<a href="http://v.youku.com/v_show/id_XMTI2Njk1MzM1Ng==.html">优酷</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_Patterns"><em>Design Patterns: Elements of Reusable Object-Oriented Software</em></a></li>
+<li><a href="http://www.mcescher.com/gallery/wood-engraving/swans/">艾舍尔《天鹅》</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Erich_Gamma">Erich Gamma</a></li>
+<li><a href="http://www.informit.com/articles/article.aspx?p=1404056">Design Patterns 15 Years Later: An Interview with Erich Gamma, Richard Helm, and Ralph Johnson</a></li>
+<li><a href="http://www.hackersdelight.org/"><em>Hacker’s Delight</em></a></li>
+<li><a href="http://book.douban.com/subject/3227098/">《编程珠玑》</a></li>
+<li><a href="http://book.douban.com/subject/1177968/">《建筑的永恒之道》</a></li>
+<li><a href="http://www.amazon.com/Cocoa-Design-Patterns-Erik-Buck/dp/0321535022"><em>Cocoa Design Patterns</em></a></li>
+<li><a href="https://goo.gl/XVvZb9">C# Delegate/Event</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Patrick_Naughton">Patrick Naughton</a></li>
+<li><a href="https://github.com/faif/python-patterns/blob/master/borg.py">Python Pattern: “Borg”</a></li>
+<li><a href="https://en.wikipedia.org/wiki/God_object">God Object</a></li>
+<li><a href="http://c2.com/cgi/wiki?GoldenHammer">Golden Hammer</a></li>
+<li><a href="http://www.imdb.com/title/tt1210819/">The Lone Ranger</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/20</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/20</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Sat, 27 Jun 2015 22:25:54 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/20/audio.mp3"></enclosure>
+            <itunes:duration>7910</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#19: 测试</title>
+            <description>
+                <![CDATA[<p>Rio 使用 HHKB 的感想；读者来信；WWDC 短评；主题是软件测试。</p>
+
+<p>《内核恐慌》网站：<a href="http://kernelpanic.fm">http://kernelpanic.fm</a> ，捐款地址：<a href="http://kernelpanic.fm/donate">http://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://www.pfu.fujitsu.com/hhkeyboard/">PFU HHKB 日文版网站</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation">Reverse Polish notation（逆波兰表示法）</a></li>
+<li><a href="https://riobard.com/2012/03/23/unicode-note/">Rio 关于 Unicode 的笔记</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ISO/IEC_2022">ISO/IEC 2022 编码</a></li>
+<li><a href="http://unicodebook.readthedocs.org/en/latest/operating_systems.html">对于 Windows 字符串操作的简单介绍</a></li>
+<li><a href="http://www.webmd.com/allergies/guide/nickel-jewelry-allergy">镍过敏</a></li>
+<li><a href="http://en.wikipedia.org/wiki/WebObjects">WebObjects</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Penetration_test">Penetration test（穿透测试）</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Smoke_testing_(software)">Smoke testing（发烟测试）</a></li>
+<li><a href="http://www.iso.org/iso/iso_9000">ISO 9000</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Waterfall_model">瀑布模型</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Agile_software_development">敏捷软件开发</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Test-driven_development">测试驱动开发（TDD）</a></li>
+<li><a href="https://cucumber.io/">Cucumber</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%81%90%E6%80%96%E8%B0%B7%E7%90%86%E8%AE%BA">恐怖谷理论</a></li>
+<li><a href="http://senseis.xmp.net/?ZenGoProgram">使用蒙特卡洛算法的 Zen 围棋程序</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Kent_Beck">Kent Beck</a></li>
+<li><a href="http://en.wikipedia.org/wiki/List_of_unit_testing_frameworks">单元测试框架列表</a></li>
+<li><a href="https://docs.python.org/2/library/doctest.html">Doctest</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://ipn.li/itgonglun/">IT 公论</a>》主播，IPN 联合创始人，<a href="http://apple4us.com/">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/19</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/19</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Mon, 15 Jun 2015 05:49:36 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/19/audio.mp3"></enclosure>
+            <itunes:duration>9212</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#18: 编码</title>
+            <description>
+                <![CDATA[<p>吴涛独自主持的一期节目，一小时的内容包括读者反馈和对于计算机编码的简短介绍。</p>
+
+<p>《内核恐慌》网站：<a href="http://kernelpanic.fm">http://kernelpanic.fm</a> ，捐款地址：<a href="http://kernelpanic.fm/donate">http://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://channel9.msdn.com/Events/Build/2015/3-610">Visual Studio Compiler team 在 Build 大会上的演示（可以从 27’20” 开始）</a></li>
+<li><a href="http://www.quora.com/William-Chen-6">William Chen</a></li>
+<li><a href="http://www.thetalkingmachines.com/">The Talking Machines</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Chinese_restaurant_process">Chinese Restaurant Process</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/18</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/18</guid>
+            <author>吴涛</author>
+            <pubDate>Sun, 31 May 2015 01:55:13 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/18/audio.mp3"></enclosure>
+            <itunes:duration>3523</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#17: Microsoft Build</title>
+            <description>
+                <![CDATA[<p>读了几封听众来信，评论了几条新闻之后，虽然嘴上说不要再讲微软，节目还是很诚实地讨论了这次微软开发者大会。</p>
+
+<p>勘误：<a href="http://zh.wikipedia.org/zh/%E5%85%AC%E5%8E%86">格里高利历</a>与<a href="http://zh.wikipedia.org/zh/%E5%84%92%E7%95%A5%E6%9B%86">儒略历</a>实际上是不同的。</p>
+
+<p>《内核恐慌》网站：<a href="https://ipn.li/kernelpanic">https://ipn.li/kernelpanic</a> ，捐款地址：<a href="http://kernelpanic.fm/donate">http://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://www.linuxjournal.com/content/more-stable-future-ubuntu">Snappy 进入 Ubuntu Desktop</a></li>
+<li><a href="http://notcp.io/">NoTCP</a></li>
+<li><a href="http://arstechnica.com/gadgets/2015/05/01/googles-dart-language-on-android-aims-for-java-free-120-fps-apps/">Dart (Sky) for Android</a></li>
+<li><a href="https://blogs.windows.com/bloggingwindows/2015/05/13/introducing-windows-10-editions/">Windows 10 versions</a></li>
+<li><a href="http://blogs.msdn.com/b/vscode/archive/2015/05/13/reacting-to-feedback-common-issues-and-our-first-update.aspx">Visual Studio Code</a></li>
+<li><a href="http://channel9.msdn.com/Events/Build/2015?sort=viewed&amp;direction=asc&amp;page=4&amp;media=True#theSessions">Microsoft Build 2015 Sessions</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/17</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/17</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Sun, 17 May 2015 15:03:30 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/17/audio.mp3"></enclosure>
+            <itunes:duration>7120</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#16: And Now for Something Completely Different</title>
+            <description>
+                <![CDATA[<p>Rio 缺席，如一代班。嘉宾四位，六方合谈。软核主题，中文排版。评议标准，臧否规范。谈笑即罢，尽欢而散。</p>
+
+<p>《内核恐慌》网站：<a href="https://ipn.li/kernelpanic">https://ipn.li/kernelpanic</a> ，捐款地址：<a href="http://kernelpanic.fm/donate">http://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://www.w3.org/International/docs/chinese-layout/zh/">中文排版需求（草案）</a></li>
+<li><a href="http://css.hanzi.co">陈奕钧制作的「汉字标准格式」</a></li>
+<li><a href="http://typeisbeautiful.com">Type is Beautiful</a></li>
+<li><a href="http://ja.wikipedia.org/wiki/JIS_X_4051">JIS X 4051</a></li>
+<li><a href="http://www.w3.org/TR/jlreq/ja/">日本語組版処理の要件</a></li>
+<li><a href="http://rishida.net">Richard Ishida</a></li>
+<li><a href="http://binb.tw/ebookmag/00/00.html">董福兴：简单做好中文排版</a></li>
+<li><a href="https://ipn.li/itgonglun/67/">IT 公论 №67: 小林章《西文字体》译者刘庆（Eric Liu）谈字体排印</a></li>
+<li><a href="https://ipn.li/itgonglun/88/">IT 公论 №88: 思源黑体（Source Han Sans）——史诗级中日韩新字体诞生</a></li>
+<li><a href="https://ipn.li/itgonglun/119/">IT 公论 №119: 用 activism 的精神做电子出版标准化</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。<br/>
+梁海：字体及语言爱好者，多语言字体技师。<br/>
+董福兴：<a href="http://wanderer.tw/">Wanderer</a> 创始人，大块文化出版数位内容事业部开发总监。<br/>
+陈奕钧：<a href="http://css.hanzi.co">「汉字标准格式」</a>作者，专门研究偏门 web 排版 hack。<br/>
+刘庆：<a href="http://www.typeisbeautiful.com/">Type is Beautiful</a> 作者，《西文字体》译者、《字体故事》联合译者。<br/>
+不鸟万如一：<a href="https://itgonglun.com">《IT 公论》</a>主播，<a href="http://zijieshe.com">字节社</a>创始人。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/16</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/16</guid>
+            <author>吴涛,梁海,董福兴,陈奕钧,刘庆,不鸟万如一</author>
+            <pubDate>Sun, 03 May 2015 01:04:33 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/16/audio.mp3"></enclosure>
+            <itunes:duration>5983</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#15: 数据可视化与交互设计</title>
+            <description>
+                <![CDATA[<p>多次提及的<a href="https://twitter.com/cxiaoji">消极姐</a>和我们一起聊了聊数据可视化与交互设计，当然一如既往地夹杂着许多其他离题万里的讨论，包括建筑师、建筑史、北京城墙、僵尸片、星战观片的最佳次序、设计师怎样编程，以及消极的若干屠龙之技。</p>
+
+<p>《内核恐慌》网站：<a href="https://ipn.li/kernelpanic">https://ipn.li/kernelpanic</a> ，捐款地址：<a href="http://kernelpanic.fm/donate">http://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://xiaoji-chen.com/blog/">消极姐的 blog</a></li>
+<li><a href="http://xiaoji-chen.com/blog/2011/sky-color-of-10-chinese-cities/">中国城市空气污染状况</a></li>
+<li><a href="http://www-personal.umich.edu/~mejn/election/2012/">Newman 的美国选举地图</a></li>
+<li><a href="http://www.amazon.com/How-Lie-Maps-2nd-Edition/dp/0226534219">How to Lie with Maps</a></li>
+<li><a href="http://en.wikipedia.org/wiki/View_of_the_World_from_9th_Avenue">纽约客封面《View of the World from 9th Avenue》</a></li>
+<li><a href="http://www.economist.com/node/21521344">经济学人封面《How China sees the world》</a></li>
+<li><a href="http://www.collinenotredameduhaut.com/">郎香教堂</a></li>
+<li><a href="http://www.vanityfair.com/unchanged/2012/11/1963-newspaper-strike-bertram-powers">关于纽约排字工人罢工的报道</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Pruitt%E2%80%93Igoe">Pruitt–Igoe 项目</a></li>
+<li><a href="http://baike.baidu.com/view/2229354.htm">天子大酒店</a></li>
+<li><a href="http://www.quora.com/Why-dont-more-designers-code/answer/Xiaoji-Chen">消极姐在 Quora 上对于 Why don’t more desingers code? 问题的回答</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Elevator_pitch">Elevator Pitch</a></li>
+<li><a href="http://movie.douban.com/subject/1300377/">《群尸玩过界》</a>，<a href="http://www.imdb.com/title/tt0103873/">IMDb</a></li>
+<li><a href="http://www.nomachetejuggling.com/2011/11/11/the-star-wars-saga-suggested-viewing-order/">Machete order</a></li>
+<li><a href="https://www.youtube.com/watch?v=ngElkyQ6Rhs">Star Wars: The Force Awakens Official Teaser #2</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Frank_Gehry">Frank Gehry</a></li>
+<li><a href="https://www.youtube.com/watch?v=yJDv-zdhzMY">The Mother of All Demos</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。<br/>
+陈晓霁：微软 Xbox 用户体验设计师。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/15</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/15</guid>
+            <author>吴涛,Rio,陈晓霁</author>
+            <pubDate>Sun, 19 Apr 2015 05:47:10 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/15/audio.mp3"></enclosure>
+            <itunes:duration>6649</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#14: 类型系统</title>
+            <description>
+                <![CDATA[<p>正音班的废除；关于捐款的一些评论；Ducati Scrambler；听众来信选读；<a href="https://ilikerabbits.com/">I Like Rabbits 网站</a> 的意义；苹果为什么要收购 Foundation DB。</p>
+
+<p>主题是「编程语言中类型系统的概念及作用」。</p>
+
+<p>《内核恐慌》网站：<a href="https://ipn.li/kernelpanic">https://ipn.li/kernelpanic</a> ，捐款地址：<a href="http://kernelpanic.fm/donate">http://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://book.douban.com/subject/1028270/">舒克和贝塔历险记</a></li>
+<li><a href="http://www.ducati.com/bikes/diavel/index.do">Ducati Diavel</a><br/></li>
+<li><a href="http://en.wikipedia.org/wiki/On_the_Waterfront">《码头风云》（<i>On the Waterfront</i>）</a></li>
+<li><a href="http://www.sas.com/">SAS</a><br/></li>
+<li><a href="http://en.wikipedia.org/wiki/Contract_research_organization">Contract research organization</a><br/></li>
+<li><a href="http://en.wikipedia.org/wiki/The_Incredible_Machine_%28series%29">The Incredible Machine</a></li>
+<li><a href="http://spark.incubator.apache.org/">Apache Spark</a><br/></li>
+<li><a href="https://foundationdb.com">FoundationDB</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Type_system">Type System</a><br/></li>
+<li><a href="http://en.wikipedia.org/wiki/Year_2000_problem">千年虫</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Year_2038_problem">2038 问题</a></li>
+<li><a href="http://www.madore.org/~david/computers/unix-leap-seconds.html">闰秒</a></li>
+<li><a href="http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html">What Every Computer Scientist Should Know About Floating-Point Arithmetic</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Operator_overloading">Operator overloading</a></li>
+<li><a href="http://stackoverflow.com/questions/9032856/what-is-the-explanation-for-these-bizarre-javascript-behaviours-mentioned-in-the">诡异的 JavaScript 运算符重载</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Strong_and_weak_typing">Strong and weak typing</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dynamic_programming_language">Dynamic programming language</a></li>
+<li><a href="https://www.paypal-engineering.com/2014/12/10/10-myths-of-enterprise-python/">10 Myths of Enterprise Python</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Object_type_%28object-oriented_programming%29#Boxing">Boxing</a></li>
+<li><a href="http://rubylearning.com/satishtalim/ruby_open_classes.html">Ruby Open Classes</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/14</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/14</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Sat, 04 Apr 2015 18:10:17 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/14/audio.mp3"></enclosure>
+            <itunes:duration>8857</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#13: 并发与异步</title>
+            <description>
+                <![CDATA[<p>《内核恐慌》开放了<a href="http://kernelpanic.fm/donate">捐款页面</a>。吴涛和 Rio 先是回味了<a href="https://ipn.li/kernelpanic/12">上一期</a>的辉煌（如果还没有听请赶紧先去听），然后聊了包括新 MacBook 在内的其它一些事情，最后讨论了编程之中并发和并行的概念，相关的几种处理模型，以及异步模式。</p>
+
+<p>《内核恐慌》网站：<a href="http://kernelpanic.fm">http://kernelpanic.fm</a>，捐款地址：<a href="http://kernelpanic.fm/donate">http://kernelpanic.fm/donate</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=ab8GtuPdrUQ">The IT Crowd | 0118 999 881 999 119 7253</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a></li>
+<li><a href="http://ipython.org/">iPython</a></li>
+<li><a href="http://pryrepl.org/">Pry</a></li>
+<li><a href="http://www.squeak.org/">Smalltalk 开发环境 Squeak</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ternary_computer">三进制计算机</a></li>
+<li><a href="http://nim-lang.org/">Nim</a></li>
+<li><a href="http://www.usbtypewriter.com/">USB Typewriter</a></li>
+<li><a href="http://concur.rspace.googlecode.com/hg/talk/concur.html">Rob Pike 关于并发的演讲幻灯片：Concurrency is not Parallelism</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Windows_3.1x#Windows_3.2">Windows 3.2</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dining_philosophers_problem">Dining philosophers problem</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Actor_model">Actor Model</a></li>
+<li><a href="http://programmers.stackexchange.com/questions/40297/what-is-a-side-effect">编程中的「副作用」</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Communicating_sequential_processes">Communicating Sequential Processes</a></li>
+<li><a href="http://docs.libuv.org/en/v1.x/">libuv</a></li>
+<li><a href="https://pragprog.com/book/pb7con/seven-concurrency-models-in-seven-weeks">Seven Concurrency Models in Seven Weeks</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Coroutine">协程</a></li>
+<li><a href="https://www.youtube.com/watch?v=xrIjfIjssLE">Erlang: The Movie</a></li>
+<li><a href="https://www.youtube.com/watch?v=rRbY3TMUcgQ">Erlang: The Movie II</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/13</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/13</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Sat, 21 Mar 2015 22:46:04 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/13/audio.mp3"></enclosure>
+            <itunes:duration>7164</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#12: 数学与编程</title>
+            <description>
+                <![CDATA[<p>特别嘉宾<a href="http://blog.farmostwood.net">木遥</a>与 Rio 和吴涛讨论了数学与编程之间的联系。话题包括但不限于：数学系的发展、统计学、数学与科学的关联、明尼苏达的天气、数学背景对于成为程序员的助益、Google 的工程师驱动特性、人们嘲讽新泽西的原因、养猫的经验、抽象几何学、Haskell、编程动手能力的来源、学习编程语言的意义、可视化编程、Lisp、FORTRAN、Go、C++、Swift、Optional、Google 的激励机制、欧洲的社会保障体制、技术变革带来的社会影响、中国政治坐标系测试、和食物替代饮料 Soylent。</p>
+
+<p>《内核恐慌》网站：<a href="https://ipn.li/kernelpanic">https://ipn.li/kernelpanic</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://apple4us.com/authors/farmostwood/">木遥在 Apple4us.com 的文章列表</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Quantitative_analyst">Quant (Quantitative analyst)</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%AE%9A%E7%90%86">贝叶斯定理</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Formal_science">形式科学</a></li>
+<li><a href="http://www.ucla.edu/">UCLA（加州大学洛杉矶分校）</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Flyover_country">Flyover States</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Orthonormal_basis">正交基</a></li>
+<li><a href="http://www.wired.com/2014/10/cat-thinks-youre-huge-unpredictable-ape/">Why your Cat Thinks You’re A Huge, Unpredictable Ape</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Category_theory">Category Theory</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Logo_(programming_language)">Logo 语言</a></li>
+<li><a href="http://makerfaire.com/maker-movement/">Maker Movement</a></li>
+<li><a href="http://blog.farmostwood.net/496.html">木遥的 blog 文章：《学 C 编程记》</a></li>
+<li><a href="https://en.wikipedia.org/wiki/John_Backus">John Backus</a></li>
+<li><a href="https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)">John McCarthy</a></li>
+<li><a href="https://twitter.com/davechenell/status/557328423602098178">Tweet: “guys i just invented the best programming language”</a></li>
+<li><a href="http://imaginary.farmostwood.net/375.html">木遥的 blog 文章：《形式证明：机器的光荣与人的梦想》</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ken_Thompson">Ken Thompson</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rob_Pike">Rob Pike</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Option_type">Option Type</a></li>
+<li><a href="http://blog.codinghorror.com/falling-into-the-pit-of-success/">Falling Into The Pit of Success</a></li>
+<li><a href="http://www.amazon.com/The-Innovators-Dilemma-Revolutionary-Business/dp/0062060244">Clayton Christensen: <i>Innovator’s Dillema</i></a></li>
+<li><a href="http://www.amazon.com/How-Google-Works-Eric-Schmidt/dp/1455582344">Eric Schmidt 的书 <em>How Google Works</em></a></li>
+<li><a href="http://xkcd.com/435/">Xkcd 435 <em>Purity</em></a></li>
+<li><a href="http://zuobiao.me/">中国政治坐标系测试</a></li>
+<li><a href="http://fiction.farmostwood.net/tag/chapter-1">木遥的小说：《留学记》</a></li>
+<li><a href="http://www.soylent.me/">Soylent</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio：《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。<br/>
+木遥：应用数学博士，Google 员工，<a href="http://apple4us.com">Apple4us</a> 成员。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/12</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/12</guid>
+            <author>吴涛,Rio,木遥</author>
+            <pubDate>Sat, 07 Mar 2015 22:41:27 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/12/audio.mp3"></enclosure>
+            <itunes:duration>9196</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#11: 从 Backbone 到 React</title>
+            <description>
+                <![CDATA[<p>（Pocket Casts 用户如果最近无法下载 IPN 的节目请退订再重新订阅试试。谢谢。）</p>
+
+<p>Willow 给大家介绍了工作中编写基于 Backbone 的应用遇到的种种困难、小团队如何做技术选型、以及如何逐步将一个大型的 Backbone 应用以 React 重写。在节目后半段，Rio 和吴涛聊了聊 OS X 上的 .NET CoreCLR，还有窗口管理器 i3。</p>
+
+<p>《内核恐慌》网站：<a href="https://ipn.li/kernelpanic">https://ipn.li/kernelpanic</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://backbonejs.org/">Backbone</a></li>
+<li><a href="http://underscorejs.org/">Underscore</a></li>
+<li><a href="http://facebook.github.io/react/">React</a></li>
+<li><a href="https://angularjs.org/">AngularJS</a></li>
+<li><a href="http://praeclarum.org/post/110552954728/building-and-running-nets-coreclr-on-os-x">Building and Running .NET’s CoreCLR on OS X</a></li>
+<li><a href="http://www.elementscompiler.com/elements/silver/">可在 Visual Studio 中编译 Swift 的 Silver</a></li>
+<li><a href="https://i3wm.org/">i3 窗口管理器</a></li>
+<li><a href="http://mizage.com/divvy/">Divvy 窗口管理器</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio:《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。<br/>
+Willow: <a href="http://www.thebackplane.com/">Backplane</a> 前端工程师。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/11</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/11</guid>
+            <author>吴涛,Rio,Willow</author>
+            <pubDate>Sun, 22 Feb 2015 22:46:18 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/11/audio.mp3"></enclosure>
+            <itunes:duration>8132</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#10: React.js 研讨会专题</title>
+            <description>
+                <![CDATA[<p>Willow（柳成荫）参加完两天的 React.js Conf 2015 回到家里，Rio 和吴涛邀请他一起来聊一聊相关话题：React.js, Flux, JSX, XHP, ES6, React Native, Flexbox Layout, REST, Relay, GraphQL, graph database 等。</p>
+
+<p>《内核恐慌》网站：<a href="https://ipn.li/kernelpanic">https://ipn.li/kernelpanic</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://ipn.li/itgonglun/42/">《IT 公论》 #42: 海外中国程序员系列之三：WhatFont 插件作者柳成荫（Willow）</a></li>
+<li><a href="https://ipn.li/itgonglun/121/">《IT 公论》 #121: WhatFont for iOS 开发者访谈</a></li>
+<li><a href="http://backbonejs.org">Backbone.js</a></li>
+<li><a href="http://emberjs.com">Ember.js</a></li>
+<li><a href="http://angularjs.org">AngularJS</a></li>
+<li><a href="http://facebook.github.io/react/">React</a></li>
+<li><a href="http://conf.reactjs.com/schedule.html">React.js Conf 2015 议程及录像</a></li>
+<li><a href="http://facebook.github.io/react/docs/flux-overview.html">Flux 应用架构</a></li>
+<li><a href="https://github.com/spoike/refluxjs">Reflux</a></li>
+<li><a href="http://facebook.github.io/immutable-js/">Immutable.js</a></li>
+<li><a href="http://facebook.github.io/jsx/">JSX</a></li>
+<li><a href="https://github.com/facebook/css-layout">CSS Flexbox Layout in JavaScript</a></li>
+<li><a href="http://jlongster.com/First-Impressions-using-React-Native">React Native 初体验</a></li>
+<li><a href="http://www.appcelerator.com/blog/2013/10/introducing-hyperloop/">Titanium Hyperloop</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Representational_state_transfer">Representational State Transfer</a></li>
+<li><a href="https://www.ics.uci.edu/~taylor/documents/2002-REST-TOIT.pdf">Principled Design of the Modern Web Architecture</a></li>
+<li><a href="https://gist.github.com/wincent/598fa75e22bdfa44cf47">Unofficial Relay FAQ</a></li>
+<li><a href="https://www.facebook.com/notes/facebook-engineering/tao-the-power-of-the-graph/10151525983993920">TAO: The power of the graph</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Graph_database">Graph database</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<ul>
+<li>Rio:《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/></li>
+<li>吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</li>
+<li>柳成荫：<a href="http://chengyinliu.com/whatfont.html">WhatFont</a> 开发者。</li>
+</ul>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/10</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/10</guid>
+            <author>吴涛,Rio,Willow</author>
+            <pubDate>Sun, 08 Feb 2015 07:15:30 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/10/audio.mp3"></enclosure>
+            <itunes:duration>6956</itunes:duration>
+            <itunes:explicit>yes</itunes:explicit>
+        </item>
+
+        <item>
+            <title>#9: 程序员的理想工作环境</title>
+            <description>
+                <![CDATA[<p>吴涛和 Rio 在前几期的听众反馈以及新闻评论中聊到了 Namespace、Python3、带机械键盘的笔记本电脑、传说中的 2015 款 12 吋 MacBook Air 的键位问题、微软 HoloLens，并从吴涛入职新公司两周的感受出发，讨论了程序员的理想工作环境是什么。</p>
+
+<p>《内核恐慌》网站：<a href="https://ipn.li/kernelpanic/">https://ipn.li/kernelpanic/</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://blog.codingnow.com/">云风</a></li>
+<li><a href="http://v2ex.com/member/rio">v2ex.com</a></li>
+<li><a href="http://outspeaking.com/words-of-technology/why-perl-didnt-win.html">关于 Perl 为何没落的文章「Why Perl Didn’t Win」</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Vaporware">雾件应为“Vaporware”</a></li>
+<li><a href="http://www.jython.org/">Jython</a></li>
+<li><a href="http://pypy.org/">Pypy</a></li>
+<li><a href="http://lucumr.pocoo.org/2014/5/12/everything-about-unicode/">Everything you did not want to know about Unicode in Python 3</a></li>
+<li><a href="http://lwn.net/Articles/531114/">Namespace</a></li>
+<li><a href="http://www.cs.bell-labs.com/sys/doc/names.html">The Use of Name Spaces in Plan 9</a></li>
+<li><a href="https://chocolatey.org/">Chocolatey</a></li>
+<li><a href="http://www.theverge.com/2015/1/5/7495073/msi-mechanical-keyboard-gt80-titan-laptop-ces">This is MSI’s insane mechanical keyboard laptop</a></li>
+<li><a href="http://en.wikipedia.org/wiki/IBM_ThinkPad_Butterfly_keyboard">IBM ThinkPad Butterfly Keyboard</a></li>
+<li><a href="https://twitter.com/SwiftOnSecurity/status/557040747862847490">InfoSec Taylor Swift</a></li>
+<li><a href="http://blog.codinghorror.com/have-keyboard-will-program/">Jeff Atwood 关于键盘布局的文章 Have Keyboard, Will Program</a></li>
+<li><a href="http://www.itworld.com/article/2868393/linus-torvalds-apples-hfs-is-probably-the-worst-file-system-ever.html">「Apple is like the weather; it pays no attention to criticism.」的出处文章</a></li>
+<li><a href="http://www.microsoft.com/en-us/pixelsense/default.aspx">Microsoft Surface (Table)</a></li>
+<li><a href="http://gizmodo.com/5365299/courier-first-details-of-microsofts-secret-tablet">Microsoft Courier</a></li>
+<li><a href="https://www.youtube.com/watch?v=3J6oPo5_V78">Microsoft Xbox 360 Kinect 2009 Promotion Video</a></li>
+<li><a href="https://twitter.com/cxiaoji/status/558038584914370563">消极姐的推</a></li>
+<li><a href="http://www.r-project.org/">R</a></li>
+<li><a href="http://www.quora.com/Which-language-is-best-C-C++-Python-or-Java/answer/Andrea-Ferro">Quora 上的问题「Which language is best, C, C++, Python or Java?」</a></li>
+<li><a href="http://www.scons.org/">SCons</a></li>
+<li><a href="http://bazaar.canonical.com/en/">Bazaar</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Concurrent_Versions_System">CVS</a></li>
+<li><a href="http://whatis.techtarget.com/definition/sunsetting">“Sunset”</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Kerberos_%28protocol%29">Kerberos</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Tiling_window_manager">Tiling window manager</a></li>
+<li><a href="https://i3wm.org/">i3 Window Manager</a></li>
+<li><a href="http://awesome.naquadah.org/">Awesome</a></li>
+<li><a href="http://xmonad.org/">xmonad</a></li>
+<li><a href="http://www.thinkwiki.org/wiki/ThinkWiki">Linux Thinkpad Wiki</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Subpixel_rendering">Subpixel Rendering</a></li>
+<li><a href="http://www.objc.io/snippets/">Objc.io Snippets</a></li>
+<li><a href="http://julialang.org/">Julia Language</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Doner_kebab">土耳其肉夹馍</a></li>
+<li><a href="http://www.hermanmiller.com/products/seating/performance-work-chairs/aeron-chairs.html">Herman Miller Aeron</a></li>
+<li><a href="http://www.varierfurniture.com/de_de/Movement-Chairs/Variable-balans-R/Variations-Variable-Balans/Variable_Balans_Black_STE999-Natural_Ash">跪椅 Variable balans</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Longboard_%28skateboard%29">Longboard</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio:《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/9</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/9</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Sun, 25 Jan 2015 06:06:43 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/9/audio.mp3"></enclosure>
+            <itunes:duration>9104</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#8: 「集装箱化」与运维管理</title>
+            <description>
+                <![CDATA[<p>作为「生命周期管理」三部曲的最后一部分，Rio 和吴涛探讨了 DevOps 的工作，部署网络应用的若干知名工具，改变了实体世界的集装箱，及其在赛博世界的对等品有何意义。</p>
+
+<p>《内核恐慌》网站：<a href="https://ipn.li/kernelpanic">https://ipn.li/kernelpanic</a></p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://ipn.li/itgonglun/131/">IT 公论 131 期「我仍然记得早期的互联网是什么模样。」</a></li>
+<li><a href="http://font.ubuntu.com/#charset-mono-regular">Ubuntu Mono</a></li>
+<li><a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a></li>
+<li><a href="http://movie.douban.com/subject/1300830/">《狂蟒之灾》</a></li>
+<li><a href="http://www.drdobbs.com/">Dr. Dobb’s</a></li>
+<li><a href="http://www.amazon.com/Michael-Abrashs-Graphics-Programming-Special/dp/1576101746">Michael Abrash’s Graphics Programming Black Book 实体书</a>，<a href="https://github.com/jagregory/abrash-black-book">GitHub 上的电子版</a></li>
+<li><a href="http://www.anandtech.com/">AnandTech</a></li>
+<li><a href="http://en.wikipedia.org/wiki/DevOps">DevOps</a></li>
+<li><a href="http://www.ciscopress.com/markets/detail.asp?st=44745">Cisco CCIP</a><br/></li>
+<li><a href="https://www.digitalocean.com/">Digital Ocean</a></li>
+<li><a href="https://www.linode.com/">Linode</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ender%27s_Game">Ender’s Game</a></li>
+<li><a href="http://www.fabfile.org/">Fabric</a></li>
+<li><a href="http://capistranorb.com/">Capistrano</a></li>
+<li><a href="https://www.chef.io/chef/">Chef</a></li>
+<li><a href="https://puppetlabs.com/">Puppet</a></li>
+<li><a href="http://palletops.com/">Pallet</a></li>
+<li><a href="http://www.saltstack.com/community/">Salt</a></li>
+<li><a href="http://rexify.org/">Rex</a></li>
+<li><a href="http://book.douban.com/subject/2354988/">《集装箱改变世界》</a></li>
+<li><a href="http://www.amazon.com/Box-Shipping-Container-Smaller-Economy-ebook/dp/B003U2TR5O/ref=tmm_kin_title_0?_encoding=UTF8&amp;sr=&amp;qid=">《集装箱改变世界》英文 Kindle 版</a></li>
+<li><a href="https://www.kernel.org/doc/Documentation/cgroups/cgroups.txt">cgroups</a></li>
+<li><a href="https://linuxcontainers.org/lxc/downloads/">LXC</a></li>
+<li><a href="https://www.docker.com/">Docker</a></li>
+<li><a href="https://www.vagrantup.com/">Vagrant</a></li>
+<li><a href="https://coreos.com/">CoreOS</a></li>
+<li><a href="https://coreos.com/blog/rocket/">Rocket</a></li>
+<li><a href="https://nixos.org/nix/">Nix / NixOS</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio:《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/8</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/8</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Sun, 11 Jan 2015 02:16:10 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/8/audio.mp3"></enclosure>
+            <itunes:duration>8976</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#7: 软件包管理</title>
+            <description>
+                <![CDATA[<p>延伸上期「生命周期管理」话题，本期节目中吴涛和 Rio 讨论了 package management，包管理。内容包括 Windows 的 DLL hell，各 Linux 发行版的打包格式，Homebrew 有何过人之处，Python 包管理工具的混乱现状，其他关键字包括 npm、Ruby Gem、Rake、Zope、Maven，当然还有 Rio 钟爱的 Go。</p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://developer.apple.com/library/mac/documentation/CoreFoundation/Conceptual/CFBundles/AboutBundles/AboutBundles.html">Apple Bundle 格式</a></li>
+<li><a href="https://developer.apple.com/legacy/library/documentation/DeveloperTools/Conceptual/SoftwareDistribution4/Managed_Installs/Managed_Installs.html#//apple_ref/doc/uid/TP40004615-CH6-SW9">Apple Package 格式</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Windows_Installer">Windows Installer</a></li>
+<li><a href="https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html">Property List (.plist) file format</a></li>
+<li><a href="http://windows.microsoft.com/en-us/windows-8/what-appdata-folder">What is the AppData folder</a></li>
+<li><a href="http://www.linfo.org/rule_of_silence.html">The Rule of Silence</a> “when a program has nothing surprising, interesting or useful to say, it should say nothing”.</li>
+<li><a href="http://en.wikipedia.org/wiki/DLL_Hell">DLL hell</a></li>
+<li><a href="https://www.debian.org/doc/manuals/debian-faq/ch-pkg_basics.en.html">Debian package</a></li>
+<li><a href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/5/html/Deployment_Guide/ch-rpm.html">RPM format</a></li>
+<li><a href="http://www.zhihu.com/question/19599986">知乎问题：服务器操作系统应该选择 Debian/Ubuntu 还是 CentOS？</a></li>
+<li><a href="http://www.ibm.com/developerworks/library/l-lpic1-v3-102-5/">Yum</a></li>
+<li><a href="https://en.opensuse.org/Portal:Zypper">Zypper</a></li>
+<li><a href="https://www.debian.org/doc/manuals/debian-reference/ch02.en.html">APT</a></li>
+<li><a href="https://www.freebsd.org/ports/">FreeBSD ports</a></li>
+<li><a href="http://www.finkproject.org/">Fink</a></li>
+<li><a href="https://www.macports.org/">MacPorts</a></li>
+<li><a href="http://brew.sh/">Homebrew</a></li>
+<li><a href="https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md">Homebrew formula</a></li>
+<li><a href="https://github.com/Homebrew/linuxbrew">Linuxbrew</a></li>
+<li><a href="https://nuget.codeplex.com/documentation">NuGet </a></li>
+<li><a href="http://zh.wikipedia.org/wiki/%E6%88%9A%E5%A4%AB%E4%BA%BA">人彘</a></li>
+<li><a href="https://github.com/busyloop/lolcat">lolcat</a></li>
+<li><a href="http://maven.apache.org/">Maven</a></li>
+<li><a href="http://stackoverflow.com/questions/861382/why-does-maven-have-such-a-bad-rep">Why does Maven have such a bad rep?</a></li>
+<li><a href="http://tech.puredanger.com/2009/01/28/maven-adoption-curve/">Maven Adoption Curve</a></li>
+<li><a href="http://devopsreactions.tumblr.com/post/91440263374/new-project-requirements-start-with-maven">New project requirements start with Maven</a></li>
+<li><a href="http://www.sonatype.org/nexus/">Sonatype Nexus</a></li>
+<li><a href="http://www.scala-sbt.org/">sbt</a></li>
+<li><a href="https://github.com/ruby/rake">Rake</a></li>
+<li><a href="https://www.coursera.org/course/progfun">Functional Programming Principles in Scala</a> by Martin Odersky</li>
+<li><a href="http://pythonhosted.org//setuptools/easy_install.html">easy_install</a></li>
+<li><a href="https://docs.python.org/2/install/index.html#install-index">Distutils</a></li>
+<li><a href="https://pip.pypa.io/en/latest/">pip</a></li>
+<li><a href="https://pypi.python.org/pypi">PyPI</a></li>
+<li><a href="https://www.python.org/dev/peps/pep-0381/">PEP 381 - Mirroring infrastructure for PyPI</a></li>
+<li><a href="https://github.com/saghul/pythonz">pythonz</a></li>
+<li><a href="http://www.pythonware.com/products/pil/">Python Image Library</a></li>
+<li><a href="http://ipython.org/ipython-doc/2/interactive/qtconsole.html">iPython Qt Console</a></li>
+<li><a href="http://www.buildout.org/en/latest/">Buildout</a></li>
+<li><a href="http://www.zope.org/">Zope</a></li>
+<li><a href="http://zeromq.org/">ZeroMQ</a></li>
+<li><a href="http://cocoapods.org/">CocoaPods</a></li>
+<li><a href="http://guides.rubygems.org/what-is-a-gem/">Gem</a></li>
+<li><a href="http://www.scala-lang.org/old/node/1403">DSLs - A powerful Scala feature</a></li>
+<li><a href="http://stackoverflow.com/help/badges/63/tumbleweed">Stackoverflow「风滚草」勋章</a></li>
+<li><a href="https://www.npmjs.com/">npm</a></li>
+<li><a href="http://bundler.io/">Bundler</a></li>
+<li><a href="http://semver.org/">Semantic Versioning</a></li>
+<li><a href="https://golang.org/cmd/go/#hdr-Download_and_install_packages_and_dependencies">Golang - Download and install packages and dependencies</a></li>
+<li><a href="https://github.com/tools/godep">Godep</a></li>
+<li><a href="http://google-engtools.blogspot.de/2011/08/build-in-cloud-how-build-system-works.html">Google Build System</a></li>
+<li><a href="https://www.youtube.com/watch?v=zKx2B8WCQuw">YouTube Rewind 2014</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio:《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/7</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/7</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Sat, 27 Dec 2014 17:16:49 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/7/audio.mp3"></enclosure>
+            <itunes:duration>8927</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#6: 从 Portal 看生命周期管理</title>
+            <description>
+                <![CDATA[<p>本期吴涛和 Rio 花了相当长的时间讨论第一人称平台解谜游戏 <a href="http://www.thinkwithportals.com/">Portal</a>，目的只是为了让这期节目不要被以下干燥内容独占：如何用同一套 Java/Go/C# 代码同时支持 web/Android/iOS 三大平台？如果电脑内存和硬盘合二为一的话，编程模型会有什么变化？</p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://input.fontbureau.com/download/?customize&amp;fontSelection=whole&amp;a=0&amp;g=0&amp;i=0&amp;l=0&amp;zero=0&amp;asterisk=0&amp;braces=0&amp;preset=default&amp;line-height=1.2&amp;email=">个性化定制 Input 字体</a></li>
+<li><a href="https://golang.org/doc/go1.4#android">Go 1.4 正式支持 Android</a></li>
+<li><a href="https://groups.google.com/forum/#!searchin/golang-nuts/ios/golang-nuts/mmB2q8RqB-Y/LDog1d7ZM5kJ">Go 1.5 计划支持 iOS</a></li>
+<li><a href="https://github.com/gopherjs/gopherjs">GopherJS: Go 语言到 JavaScript 编译器</a></li>
+<li><a href="http://gmailblog.blogspot.com.es/2014/11/going-under-hood-of-inbox.html">Google Inbox 如何用同一套 Java 代码同时支持 Web, Android, iOS</a></li>
+<li><a href="http://www.gwtproject.org">GWT: 将 Java 编译成 JavaScript</a></li>
+<li><a href="http://j2objc.org">J2ObjC: 将 Java 编译成 Objective-C</a></li>
+<li><a href="http://youtu.be/Y6ljFaKRTrI">Portal 主题曲 <em>Still Alive</em></a></li>
+<li><a href="http://www.jonathancoulton.com/"><em>Still Alive</em> 作者 Jonathan Coulton 的网站</a></li>
+<li><a href="http://www.thinkwithportals.com/comic/">Portal 2 漫画: <em>Lab Rat</em></a> (<a href="http://www.thinkwithportals.com/comic/?l=zh-cn">中文版</a>)</li>
+<li><a href="http://youtu.be/4drucg1A6Xk">Portal 真人电影短片</a></li>
+<li><a href="http://en.wikipedia.org/wiki/GLaDOS">Portal 大反派 GLaDOS</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Core_dump">Core Dump</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Magnetic-core_memory">磁芯存储器 (Magnetic-core Memory)</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Wang_Laboratories">王安电脑公司</a>创始人<a href="http://en.wikipedia.org/wiki/An_Wang">王安</a></li>
+<li>「<a href="http://archive.wired.com/politics/law/news/1997/01/1484">640KB 内存完全足够了？</a>」</li>
+<li><a href="http://en.wikipedia.org/wiki/Computer_multitasking#Cooperative_multitasking.2Ftime-sharing">协作式多任务</a> vs. <a href="http://en.wikipedia.org/wiki/Preemption_%28computing%29">抢占式多任务</a></li>
+<li><a href="http://nodejs.org/">Node.js</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Managed_code">Managed code</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Memory_management">Memory Management</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Data_structure_alignment">Data Structure Alignment</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Read-only_memory">Read-Only Memory</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Virtual_memory">虚拟内存 (Virtual Memory)</a></li>
+<li><a href="http://en.wikipedia.org/wiki/NTLDR">Windows NT boot loader</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Itanium">Intel 安腾处理器</a></li>
+<li><a href="http://en.wikipedia.org/wiki/X86-64">AMD64/x86-64</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Memory_hierarchy">内存层级 (Memory Hierarchy)</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Processor_register">寄存器 (Register)</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Cache_%28computing%29">高速缓存 (Cache)</a></li>
+<li><a href="https://gist.github.com/hellerbarde/2843375">每个程序员都应该知道的访问延迟数值</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Asynchronous_I/O">异步输入输出 (Asynchronous I/O)</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Three-dimensional_integrated_circuit">三维集成电路</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Volatile_memory">易失存储器</a> vs. <a href="http://en.wikipedia.org/wiki/Non-volatile_memory">非易失存储器</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Cold_boot_attack">Cold Boot Attack</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Serialization">序列化 (Serialization)</a></li>
+<li><a href="http://en.wikipedia.org/wiki/NetBoot">网络启动 NetBoot</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Memristor">忆阻器 (Memristor)</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Automatic_Reference_Counting">Automatic Reference Counting</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29">Garbage Collection</a></li>
+<li><a href="https://golang.org/doc/go1.4#runtime">Go 1.4 Changes to the runtime: fully precise garbage collector and concurrent garbage collector</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Memory-mapped_file">内存映射 (Memory Mapping)</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Reverse_proxy">反向代理</a>缓存服务器 <a href="https://www.varnish-cache.org">Varnish</a></li>
+<li>Varnish 架构师写的文章 <a href="https://www.varnish-cache.org/trac/wiki/ArchitectNotes"><em>So what’s wrong with 1975 programming?</em></a></li>
+<li><a href="http://en.wikipedia.org/wiki/Core_Data">Core Data</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ted_Chiang">姜峯楠 (Ted Chiang)</a>: <a href="http://www.amazon.com/The-Lifecycle-Software-Objects-Chiang/dp/1596063173"><em>The Lifecycle of Software Objects</em></a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio:《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/6</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/6</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Sun, 14 Dec 2014 07:43:38 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/6/audio.mp3"></enclosure>
+            <itunes:duration>8542</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#5: 编程字体</title>
+            <description>
+                <![CDATA[<p>从补遗上期未能提及的若干编辑器开始，follow up 持续了一小时，话题包括 .NET 跨平台、Handmade Hero、学徒工、DIN 1451 和 San Francisco 字体的差异。在后半部分，Rio 和吴涛分别历数了自己最喜欢的编程字体并分别做了推荐。</p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://gameinfo.na.leagueoflegends.com/en/game-info/champions/vi/">LoL 中的 Vi</a></li>
+<li><a href="http://programming.nu/">Vico 所使用的 Nu 语言</a></li>
+<li><a href="http://www.macrabbit.com/espresso/">MacRabbit Espresso</a></li>
+<li><a href="https://panic.com/coda/">Coda</a></li>
+<li><a href="http://coteditor.com/">支持竖排的 CotEditor</a></li>
+<li><a href="http://brackets.io/">Bracket</a></li>
+<li><a href="http://www.jedit.org/">jEdit</a></li>
+<li><a href="https://github.com/go-qml/qml">QML 的 Go 语言 binding</a></li>
+<li><a href="http://quantum-os.github.io/">Quantum OS</a></li>
+<li><a href="http://www.crimsoneditor.com/">Crimson Editor</a></li>
+<li><a href="http://www.visualstudio.com/downloads/download-visual-studio-vs">Visual Studio Community 2013 with Update 4</a></li>
+<li><a href="https://github.com/aspnet/home">Github 上的 ASP.NET</a></li>
+<li><a href="http://handmadehero.org/">Handmade Hero</a></li>
+<li><a href="http://www.twitch.tv/handmade_hero">Handmade Hero 在 Twitch 上的频道</a></li>
+<li><a href="http://eclim.org/">Eclim</a></li>
+<li><a href="http://www.pluralsight.com/">Pluralsight，PeepCode 的后继网站</a></li>
+<li><a href="https://github.com/wellsriley/YosemiteSanFranciscoFont">以 San Francisco Font 作为 Yosemite 系统字体</a></li>
+<li><a href="http://en.wikipedia.org/wiki/DIN_1451">DIN 1451 字体</a></li>
+<li><a href="http://en.wikipedia.org/wiki/FE-Schrift">德国车牌字体 FE-Schrift</a></li>
+<li><a href="https://en.wikipedia.org/wiki/San_Francisco_(1984_typeface)">1984 年的 San Francisco 字体</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Susan_Kare">Susan Kare</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Monaco_%28typeface%29">Monaco 字体</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Menlo_%28typeface%29">Menlo 字体</a></li>
+<li><a href="http://input.fontbureau.com/info/">Input 字体</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Consolas">Consolas 字体</a></li>
+<li><a href="http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&amp;code=1960">Source Code Pro 字体</a></li>
+<li><a href="http://www.google.com/fonts/specimen/PT+Mono">PT Mono 字体</a></li>
+<li><a href="http://www.fsd.it/fonts/pragmatapro.htm">PragmataPro 字体</a>、<a href="http://a.disquscdn.com/uploads/mediaembed/images/1463/5597/original.jpg">其专为编程设计的 ligature</a></li>
+<li><a href="http://www.marksimonson.com/fonts/view/anonymous-pro">Anonymous Pro</a></li>
+<li><a href="http://en.wikipedia.org/wiki/DejaVu_fonts#Sans_Mono">DejaVu Sans Mono</a></li>
+<li><a href="http://www.linuxlibertine.org/index.php?id=2&amp;L=1">Linux Libertine 系列字体</a></li>
+<li><a href="http://en.wikipedia.org/wiki/OCR-A_font">OCR A</a></li>
+<li><a href="https://www.youtube.com/watch?v=ts_PVB5sR6U">尚格云顿的沃尔沃广告片</a></li>
+<li><a href="https://www.youtube.com/watch?v=dndHQzZPH0Q">针对上述广告的模仿版本之一</a>、<a href="https://www.youtube.com/watch?v=-9NE0BKE51g">之二</a>、<a href="https://www.youtube.com/watch?v=JMSbrFLBz64">之三</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio:《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/5</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/5</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Sun, 30 Nov 2014 01:31:03 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/5/audio.mp3"></enclosure>
+            <itunes:duration>8331</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#4: 编辑器巡礼</title>
+            <description>
+                <![CDATA[<p>吴涛和 Rio 作为两个 Vim 用户讨论了 Emacs 与 Vim 之间（以及程序员界其他）的圣战、Sublime Text、TextMate、Chocolat（没有 e）、Vim、SciTE、UltraEdit、EditPlus、Notepad++、Vim、Atom、Acme、Vim、Eclipse、IntelliJ、NetBeans、Vim、Visual Studio、Xcode，以及 Vim。</p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://twitter.com/scienceporn/status/529515667469660160">Logic vs. American Logic</a></li>
+<li><a href="http://neovim.org/">NeoVim</a></li>
+<li><a href="http://www.vicoapp.com/">Vico</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bram_Moolenaar">Bram Moolenaar</a></li>
+<li><a href="http://www.zhihu.com/question/20829348/answer/16321677">Rio 的知乎回答《Windows 8 失败了吗？》</a></li>
+<li><a href="http://research.swtch.com/acme">A tour of Acme</a></li>
+<li><a href="http://www.scintilla.org/SciTE.html">SciTe</a></li>
+<li><a href="https://itunes.apple.com/us/app/scite/id466385995">SciTe Mac App Store 版本</a></li>
+<li><a href="http://www.quora.com/Code-Editors/What-are-the-main-differences-between-Vim-and-Emacs">Quora 上的问题：Vim 和 Emacs 的区别何在？</a></li>
+<li><a href="http://www.visualstudio.com/en-us/products/compare-visual-studio-products-vs.aspx">Visual Studio 各版本的差异</a></li>
+<li><a href="http://watchdogforxcode.com/">自动删除 Xcode 临时文件的工具：Watchdog</a></li>
+<li><a href="http://news.microsoft.com/2014/11/12/microsoft-takes-net-open-source-and-cross-platform-adds-new-development-capabilities-with-visual-studio-2015-net-2015-and-visual-studio-online/">微软宣布 .NET 平台服务器端开源</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio:《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/4</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/4</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Sun, 16 Nov 2014 04:13:39 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/4/audio.mp3"></enclosure>
+            <itunes:duration>9887</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#3: 静态网站生成器</title>
+            <description>
+                <![CDATA[<p>动态网站太重了。轻量级的静态网站生成工具一时蔚然成风，至少在开发者圈子里如此。它是什么，解决了怎样的问题，为什么流行，效果如何？</p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://twitter.com/horse_mans/status/521405210342981633">@horse_mans 的推特帐号</a></li>
+<li><a href="https://staticsitegenerators.net/">Static site generator 列表及 Github 关注度排名</a></li>
+<li><a href="https://github.com/jekyll/jekyll">Jekyll</a></li>
+<li><a href="http://jekyllbootstrap.com/">Jekyll Bootstrap</a></li>
+<li><a href="http://octopress.org/">Octopress</a></li>
+<li><a href="http://middlemanapp.com/">Middleman</a></li>
+<li><a href="https://github.com/getpelican/pelican">Pelican</a></li>
+<li><a href="http://hyde.github.io/">Hyde</a></li>
+<li><a href="http://gohugo.io/">Hugo</a></li>
+<li><a href="http://vim.spf13.com/">spf13 的 The Ultimate Vim Distribution</a></li>
+<li><a href="http://codekata.com/">Code kata</a></li>
+<li><a href="http://devopsreactions.tumblr.com/post/99634417776/demonstrating-end-to-end-automation-to-new-employees">GIF: Demonstrating end-to-end automation to new employees</a></li>
+</ul>
+
+<p>吴涛希望 Rio 转写成 Go 的 Python 代码：</p>
+
+<pre><code>import datetime
+print datetime.datetime.now().strftime(&#39;北京时间 %H 点 %M 分&#39;)
+</code></pre>
+
+<p>Rio 的回复：</p>
+
+<pre><code>import (
+    &#34;fmt&#34;
+    &#34;time&#34;
+)
+
+func main() {
+    fmt.Println(time.Now().Format(&#34;北京时间 15 点 04 分&#34;))
+}
+</code></pre>
+
+<p>简单来说，Go 使用「2006」、「Jan」、「2」、「15」、「04」等字面值来代替 strftime 中的「%Y」、「%b」、「%d」、「%H」、「%M」作为格式化日期时的占位符。延伸阅读： <a href="http://pauladamsmith.com/blog/2011/05/go_time.html">Parsing and formatting date/time in Go</a>、<a href="http://golang.org/pkg/time/#pkg-constants">http://golang.org/pkg/time/#pkg-constants</a>。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/3</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/3</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Mon, 03 Nov 2014 02:05:13 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/3/audio.mp3"></enclosure>
+            <itunes:duration>6328</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#2: 键盘恐慌</title>
+            <description>
+                <![CDATA[<p>机械键盘、薄膜键盘、电容键盘、单手键盘、无刻印键盘、人体工学键盘、「和弦」键盘（Chorded Keyboard）、IBM Model M、Apple Extended Keyboard II、Matias Keyboard、HHKB、Das Keyboard、CODE Keyboard、黑轴、红轴、青轴、白轴、透明轴、Alps 轴、美式英语键位、英式英语键位、国际英语键位、德语键位、法语键位……两小时的键盘饕餮大餐。Bonus: Rio 人生开发的第一个软件曝光（下有 GitHub 链接）。</p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="https://mechanicalkeyboards.com/learn.php">机械键盘百科</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Happy_Hacking_Keyboard">Happy Hacking Keyboard</a></li>
+<li><a href="http://www.cherrycorp.com/cid">Cherry</a></li>
+<li><a href="http://www.keyboardco.com/blog/index.php/2012/12/an-introduction-to-cherry-mx-mechanical-switches/">Cherry 键盘轴简介</a></li>
+<li><a href="http://www.theverge.com/2014/10/7/6882427/king-of-keys">The Verge 关于 IBM Model M 的报道</a></li>
+<li><a href="http://en.wikipedia.org/wiki/PS/2_port">PS/2 接口</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Apple_Desktop_Bus">ADB 接口</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Carpal_tunnel_syndrome">腕管综合症（Carpal tunnel syndrome）</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Repetitive_strain_injury">RSI（重复性劳损）</a></li>
+<li><a href="https://www.trulyergonomic.com/store/index.php">Truly Ergonomic Mechanical Keyboard</a></li>
+<li><a href="http://matias.ca/halfkeyboard/">Matias 单手键盘</a></li>
+<li><a href="http://www.daskeyboard.com">Das Keyboard</a></li>
+<li><a href="http://www.wasdkeyboards.com">WASD Keyboards</a></li>
+<li><a href="http://blog.codinghorror.com">Jeff Atwood 的博客</a></li>
+<li><a href="http://www.discourse.org">Discourse</a></li>
+<li><a href="http://codekeyboards.com">CODE Mechanical Keyboard</a></li>
+<li><a href="https://github.com/riobard/loopman">Rio 人生中开发的第一个软件：Loopman</a></li>
+<li><a href="http://panic.com/prompt/">Prompt 2</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard">德沃夏克键盘布局</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Chorded_keyboard">Chorded Keyboard</a></li>
+<li><a href="http://en.wikipedia.org/wiki/FrogPad">FrogPad</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio:《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/2</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/2</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Sun, 19 Oct 2014 06:20:25 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/2/audio.mp3"></enclosure>
+            <itunes:duration>7584</itunes:duration>
+
+        </item>
+
+        <item>
+            <title>#1: 内核恐慌开播！</title>
+            <description>
+                <![CDATA[<p>《内核恐慌》节目初始化，主持人是 Rio 和吴涛，内容基本上是从 kernel panic 说到程序的异常处理机制，中间穿插着人机交互、NAS、社会工程学、报税、输入法、行车记录仪和 systemd，顺便黑了黑法国和 Java。</p>
+
+<h2>相关链接</h2>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Kernel_panic">Kernel Panic</a><br/></li>
+<li><a href="https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/pmset.1.html">pmset</a></li>
+<li><a href="https://news.ycombinator.com/item?id=8402079">「The car guy」相关新闻及评论</a></li>
+<li><a href="http://i3wm.org/">i3</a></li>
+<li><a href="http://awesome.naquadah.org/">Awesome</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Informatics_(academic_field)">Informatics</a></li>
+<li><a href="https://www.youtube.com/user/Russiandashcamvideos">Youtube 上面俄国行车记录仪影片集锦</a></li>
+<li><a href="http://web.eecs.utk.edu/~huangj/cs360/360/notes/Setjmp/lecture.html">C setjmp / longjmp</a></li>
+<li><a href="http://blog.golang.org/defer-panic-and-recover">Defer, Panic, and Recover</a></li>
+<li><a href="http://www.zhihu.com/question/24261295/answer/27299162">Swift 为什么没有异常处理？</a></li>
+<li><a href="https://plus.google.com/+LennartPoetteringTheOneAndOnly/posts/J2TZrTvu7vd">Systemd 作者对于来自开源社区攻击的评论</a></li>
+<li><a href="http://boycottsystemd.org">抵制 systemd 的网站 boycottsystemd.org</a></li>
+<li><a href="https://code.google.com/p/rimeime/wiki/Downloads">鼠须管</a></li>
+<li><a href="https://bintray.com/lotem/rime/Squirrel">鼠须管 GUI 配置工具</a></li>
+<li><a href="http://www.zdic.net/c/b/158/347541.htm">戛然而止</a></li>
+</ul>
+
+<h2>人物简介</h2>
+
+<p>Rio:《<a href="http://itgonglun.com">IT 公论</a>》主播，<a href="http://ipn.li">IPN</a> 联合创始人，<a href="http://apple4us.com">Apple4us</a> 程序员。<br/>
+吴涛：<a href="http://typeisbeautiful.com">Type is Beautiful</a> 程序员，《内核恐慌》主播。</p>
+]]>
+            </description>
+            <link>https://ipn.li/kernelpanic/1</link>
+            <guid isPermaLink="true">https://ipn.li/kernelpanic/1</guid>
+            <author>吴涛,Rio</author>
+            <pubDate>Sun, 12 Oct 2014 04:40:08 &#43;0000</pubDate>
+            <enclosure
+                type="audio/mpeg"
+                url="https://ipn.li/kernelpanic/1/audio.mp3"></enclosure>
+            <itunes:duration>3464</itunes:duration>
+
+        </item>
+
+    </channel>
+</rss>
