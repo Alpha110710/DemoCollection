@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.lanou.chenfengyao.musicdemo.widget.SquareImageView
+        android:id="@+id/item_main_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_default_art"
+        android:background="@color/colorAccent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_channel_item_bg"
+        android:layout_alignParentBottom="true"
+        android:text="这是标题"
+        android:gravity="center"
+        android:padding="5dp"/>
+</RelativeLayout>
