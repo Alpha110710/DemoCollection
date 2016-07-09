@@ -10,13 +10,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <service android:name=".service.MusicService">
-            <intent-filter>
+        <!--<service android:name=".service.MusicService">-->
+            <!--<intent-filter>-->
 
-                <!-- 按照官网说明,必须使用这个Action -->
-                <action android:name="android.media.browse.MediaBrowserService" />
-            </intent-filter>
-        </service>
+                <!--&lt;!&ndash; 按照官网说明,必须使用这个Action &ndash;&gt;-->
+                <!--<action android:name="android.media.browse.MediaBrowserService" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
 
         <activity
             android:name=".mian.MainActivity"

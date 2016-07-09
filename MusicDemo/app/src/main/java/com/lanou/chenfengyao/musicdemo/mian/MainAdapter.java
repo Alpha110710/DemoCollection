@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.lanou.chenfengyao.musicdemo.R;
@@ -43,7 +44,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> 
     public void onBindViewHolder(MyViewHolder holder, int position) {
         MusicBean musicBean = musicBeen.get(position);
         Glide.with(context).load(musicBean.getBgPath())
-                .into()
+                .into(holder.bgIv);
+        holder.titleTv.setText(musicBean.getMusicName());
     }
 
     @Override
@@ -53,9 +55,11 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> 
 
     class MyViewHolder extends RecyclerView.ViewHolder{
         public ImageView bgIv;
+        public TextView titleTv;
         public MyViewHolder(View itemView) {
             super(itemView);
-            bgIv = itemView.findViewById(R.id.item_main_rv)
+            bgIv = (ImageView) itemView.findViewById(R.id.item_main_iv);
+            titleTv = (TextView) itemView.findViewById(R.id.item_title_tv);
         }
     }
 }

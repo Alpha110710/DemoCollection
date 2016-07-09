@@ -19,7 +19,7 @@ import com.lanou.chenfengyao.musicdemo.utils.NoLayoutBindException;
  * Fragment的基类
  */
 public abstract class BaseFragment extends Fragment {
-    private Context context;
+    protected Context context;
     private static final String STATE_SAVE_IS_HIDDEN = "STATE_SAVE_IS_HIDDEN";
 
     @Override

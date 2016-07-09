@@ -1,9 +1,5 @@
 package com.lanou.chenfengyao.musicdemo.mian;
 
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -14,6 +10,7 @@ import android.view.MenuItem;
 
 import com.lanou.chenfengyao.musicdemo.R;
 import com.lanou.chenfengyao.musicdemo.base.BaseAty;
+import com.lanou.chenfengyao.musicdemo.channel.ChannelDetailFragment;
 import com.lanou.chenfengyao.musicdemo.utils.BindContent;
 
 import static com.lanou.chenfengyao.musicdemo.R.*;
@@ -21,10 +18,8 @@ import static com.lanou.chenfengyao.musicdemo.R.*;
 @BindContent(value = R.layout.activity_main)
 public class MainActivity extends BaseAty
         implements NavigationView.OnNavigationItemSelectedListener {
-    //添加频道的悬浮按钮
-    private FloatingActionButton addChannelFab;
-    private RecyclerView channelRv;
     private Toolbar toolbar;
+    //添加频道的悬浮按钮
     private DrawerLayout drawer;
     private NavigationView navigationView;
 
@@ -34,7 +29,6 @@ public class MainActivity extends BaseAty
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        addChannelFab = (FloatingActionButton) findViewById(R.id.fab);
 
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -45,19 +39,20 @@ public class MainActivity extends BaseAty
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        channelRv = bindView(id.main_rv);
+    }
+
+    public void showChannelDetail(String url){
+        ChannelDetailFragment fragment = ChannelDetailFragment.instance(url);
+        addFragment(fragment, id.main_content);
+
     }
 
     @Override
     protected void initData() {
-        addChannelFab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        MainFragment mainFragment = new MainFragment();
+        addFragment(mainFragment, id.main_content);
     }
+
 
     @Override
     public void onBackPressed() {
