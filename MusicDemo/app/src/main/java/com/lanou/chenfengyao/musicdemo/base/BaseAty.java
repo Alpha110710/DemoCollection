@@ -34,10 +34,11 @@ public abstract class BaseAty extends AppCompatActivity {
         initData();
     }
 
-    public void addFragment(BaseFragment fragment, int id) {
+    protected void addFragment(BaseFragment fragment, int id) {
         Stack<BaseFragment> stack = stackHashMap.get(id);
         if (stack == null) {
             stack = new Stack<>();
+            stackHashMap.put(id,stack);
         }
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
@@ -48,9 +49,10 @@ public abstract class BaseAty extends AppCompatActivity {
             transaction.add(id,fragment).commit();
         }
         stack.push(fragment);
+
     }
 
-    public void back(int id) {
+    protected void back(int id) {
         Stack<BaseFragment> fragmentStack = stackHashMap.get(id);
         if(fragmentStack == null){
             Log.d("Sysout",id + "没有加入过Fragment");

@@ -50,7 +50,7 @@ public class MainFragment extends BaseFragment {
             public void onItemClick(int pos) {
                 Toast.makeText(context, "pos" + pos, Toast.LENGTH_SHORT).show();
                 MainActivity mainActivity = (MainActivity) getActivity();
-
+                mainActivity.showChannelDetail(pos+"");
             }
         });
     }
