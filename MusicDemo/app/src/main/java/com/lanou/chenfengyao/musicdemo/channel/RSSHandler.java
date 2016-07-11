@@ -22,6 +22,8 @@ public class RSSHandler extends DefaultHandler{
     final int RSS_CATEGORY = 4;
     final int RSS_PUBDATE = 5;
     final int C_TITLE = 6;
+    final int C_SUMMARY = 7;
+
     int currentstate = 0;
     private boolean begin = true;
 
@@ -46,6 +48,8 @@ public class RSSHandler extends DefaultHandler{
     @Override
     public void startElement(String uri, String localName, String qName,
                              Attributes attributes) throws SAXException {
+        Log.d("RSSHandler", localName);
+        Log.d("RSSHandler", qName);
         if(localName.equals("channel")){
             currentstate = 0;
             return;
@@ -54,6 +58,7 @@ public class RSSHandler extends DefaultHandler{
             currentstate = C_TITLE;
             return;
         }
+//        if (localName.equals("itunes"))
         if(localName.equals("item")){
             RssItem = new RSSItem();
             begin = false;

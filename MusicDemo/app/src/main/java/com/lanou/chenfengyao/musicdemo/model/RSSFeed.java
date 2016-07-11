@@ -12,7 +12,7 @@ import java.util.Vector;
 public class RSSFeed {
     private String title;
     private int itemcount;
-    
+
     private List<RSSItem> itemList;
 
 
