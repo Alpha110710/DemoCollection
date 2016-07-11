@@ -6,9 +6,12 @@ import android.util.Log;
 import com.lanou.chenfengyao.musicdemo.R;
 import com.lanou.chenfengyao.musicdemo.base.BaseAty;
 import com.lanou.chenfengyao.musicdemo.base.BaseFragment;
+import com.lanou.chenfengyao.musicdemo.model.RSSFeed;
 import com.lanou.chenfengyao.musicdemo.utils.BindContent;
 
+import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.DefaultHandler;
 
 import java.io.BufferedInputStream;
@@ -29,6 +32,8 @@ import javax.xml.parsers.SAXParserFactory;
  */
 @BindContent(value = R.layout.fragmnet_channel_detail)
 public class ChannelDetailFragment extends BaseFragment {
+    private RSSFeed rssFeed;
+
     public static ChannelDetailFragment instance(String url) {
         Bundle bundle = new Bundle();
         bundle.putString("url", url);
@@ -44,42 +49,35 @@ public class ChannelDetailFragment extends BaseFragment {
 
     @Override
     protected void initData() {
-        String url = getArguments().getString("url");
+        rssFeed = getRssFeed("url");
+        Log.d("ChannelDetailFragment", rssFeed.getTitle());
+        Log.d("ChannelDetailFragment", "rssFeed.getAllItems().size():" + rssFeed.getAllItems().size());
+    }
+
+    private RSSFeed getRssFeed(String rssUrl){
         try {
-
-            InputStream stream = context.getAssets().open("teahour.xml");
-
-            //InputStreamReader inputStreamReader = new InputStreamReader(stream);
-            // BufferedReader reader = new BufferedReader(inputStreamReader);
-            //解析流，设定需要解析的节点
-//            List<HashMap<String, String>> list
-//                    = SaxService.readXML(stream, "person");
+// 这里我们实现了本地解析，所以注掉了这个取网络数据的。
+//            URL url = new URL(rssUrl);
             SAXParserFactory factory = SAXParserFactory.newInstance();
-            //实例化SAX解析器。
-            SAXParser sParser = factory.newSAXParser();
-            //实例化DefaultHandler，设置需要解析的节点
-            MyHandler myHandler = new MyHandler("item");
-            // 开始解析
-            sParser.parse(stream, myHandler);
-            List<HashMap<String, String>> list = myHandler.getList();
-            Log.d("sax",list.size()+"");
-            for (HashMap<String, String> map : list) {
-                //打印到LogCat中
-               Log.d("sax",map.toString());
-            }
-//            String out = "";
-//            while ((out = reader.readLine())!=null){
-//                Log.d("Sysout",out);
-//            }
-//            reader.close();
-//            inputStreamReader.close();
-            stream.close();
-        } catch (IOException e) {
-            e.printStackTrace();
+            SAXParser parser = factory.newSAXParser();
+            XMLReader reader = parser.getXMLReader();
+            RSSHandler handler = new RSSHandler();
+            reader.setContentHandler(handler);
+            InputStream inputStream = context.getAssets().open("teahour.xml");
+            InputSource is = new InputSource(inputStream);//取得本地xml文件
+
+            reader.parse(is);
+            return handler.getFeed();
         } catch (ParserConfigurationException e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (SAXException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
+        return null;
     }
 }

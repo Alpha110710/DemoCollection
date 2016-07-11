@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel>
+    <title>RSS 解析练习</title>
+    <description>hehehaha</description>
+    <link>http://www.cnblogs.com/felix-hua/</link>
+    <language>zh-cn</language>
+
+
+    <item>
+        <title><![CDATA[头条]]></title>
+        <link>http://mc.cz001.com.cn/images/menu/23_active.png</link>
+        <category>0</category>
+        <description>描述详细信息的</description>
+        <pubDate>2012-01-09</pubDate>
+    </item>
+
+    <item>
+        <title><![CDATA[新闻]]></title>
+        <link>http://mc.cz001.com.cn/images/menu/23_active.png</link>
+        <category>0</category>
+        <description>描述详细信息的</description>
+        <pubDate>2012-01-09</pubDate>
+    </item>
+
+    <item>
+        <title><![CDATA[首页]]></title>
+        <link>http://mc.cz001.com.cn/images/menu/23_active.png</link>
+        <category>0</category>
+        <description>描述详细信息的</description>
+        <pubDate>2012-01-09</pubDate>
+    </item>
+
+    <item>
+        <title><![CDATA[财经]]></title>
+        <link>http://mc.cz001.com.cn/images/menu/23_active.png</link>
+        <category>0</category>
+        <description>描述详细信息的</description>
+        <pubDate>2012-01-09</pubDate>
+    </item>
+</channel>
