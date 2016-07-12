@@ -1,4 +1,4 @@
-package com.lanou.chenfengyao.expandablerecyclerview;
+package com.lanou.chenfengyao.smalldemos.expandrv;
 
 import android.view.View;
 import android.view.ViewGroup;
