@@ -3,6 +3,7 @@ package com.lanou.chenfengyao.musicdemo.channel;
 /**
  * Created by ChenFengYao on 16/7/11.
  */
+
 import android.util.Log;
 
 import com.lanou.chenfengyao.musicdemo.model.RSSFeed;
@@ -13,31 +14,33 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 
-public class RSSHandler extends DefaultHandler{
-    RSSFeed RssFeed;
-    RSSItem RssItem;
-    final int RSS_TITLE = 1;
-    final int RSS_LINK = 2;
-    final int RSS_DESCRIPTION = 3;
-    final int RSS_CATEGORY = 4;
-    final int RSS_PUBDATE = 5;
+public class RSSHandler extends DefaultHandler {
+    RSSFeed rssFeed;
+    RSSItem rssItem;
+    final int ITEM_TITLE = 1;
+    final int ITEM_LINK = 2;
+    final int ITEM_DESCRIPTION = 3;
+    final int ITEM_CATEGORY = 4;
+    final int ITEM_PUBDATE = 5;
     final int C_TITLE = 6;
     final int C_SUMMARY = 7;
+    final int C_LOGO = 8;
 
     int currentstate = 0;
     private boolean begin = true;
 
-    public RSSHandler(){}
+    public RSSHandler() {
+    }
 
-    public RSSFeed getFeed(){
-        Log.d("RSSHandler", "RssFeed:" + RssFeed);
-        return RssFeed;
+    public RSSFeed getFeed() {
+        Log.d("RSSHandler", "rssFeed:" + rssFeed);
+        return rssFeed;
     }
 
     @Override
     public void startDocument() throws SAXException {
-        RssFeed = new RSSFeed();
-        RssItem = new RSSItem();
+        rssFeed = new RSSFeed();
+        rssItem = new RSSItem();
     }
 
     @Override
@@ -45,43 +48,54 @@ public class RSSHandler extends DefaultHandler{
 
     }
 
+    //qName是全名 而localName 是:后面的
     @Override
     public void startElement(String uri, String localName, String qName,
                              Attributes attributes) throws SAXException {
-        Log.d("RSSHandler", localName);
         Log.d("RSSHandler", qName);
-        if(localName.equals("channel")){
+
+        if (localName.equals("channel")) {
             currentstate = 0;
             return;
         }
-        if(localName.equals("title") && begin){
+        if (localName.equals("title") && begin) {
             currentstate = C_TITLE;
             return;
         }
-//        if (localName.equals("itunes"))
-        if(localName.equals("item")){
-            RssItem = new RSSItem();
+        if (qName.equals("itunes:summary") && begin) {
+            currentstate = C_SUMMARY;
+            return;
+        }
+        if (qName.equals("itunes:image") && begin) {
+            currentstate = C_LOGO;
+            return;
+        }
+        if (localName.equals("item")) {
+            rssItem = new RSSItem();
             begin = false;
             return;
         }
-        if(localName.equals("title")){
-            currentstate = RSS_TITLE;
+        if (qName.equals("enclosure")) {//设置音频url
+            rssItem.setEnclosureUrl(attributes.getValue("url"));
+        }
+        if (localName.equals("title")) {
+            currentstate = ITEM_TITLE;
             return;
         }
-        if(localName.equals("description")){
-            currentstate = RSS_DESCRIPTION;
+        if (localName.equals("description")) {
+            currentstate = ITEM_DESCRIPTION;
             return;
         }
-        if(localName.equals("link")){
-            currentstate = RSS_LINK;
+        if (localName.equals("link")) {
+            currentstate = ITEM_LINK;
             return;
         }
-        if(localName.equals("category")){
-            currentstate = RSS_CATEGORY;
+        if (localName.equals("category")) {
+            currentstate = ITEM_CATEGORY;
             return;
         }
-        if(localName.equals("pubDate")){
-            currentstate = RSS_PUBDATE;
+        if (localName.equals("pubDate")) {
+            currentstate = ITEM_PUBDATE;
             return;
         }
         currentstate = 0;
@@ -90,8 +104,8 @@ public class RSSHandler extends DefaultHandler{
     @Override
     public void endElement(String uri, String localName, String qName)
             throws SAXException {
-        if(localName.equals("item")){
-            RssFeed.addItem(RssItem);
+        if (localName.equals("item")) {
+            rssFeed.addItem(rssItem);
             return;
         }
     }
@@ -100,29 +114,35 @@ public class RSSHandler extends DefaultHandler{
     public void characters(char[] ch, int start, int length)
             throws SAXException {
         String theString = new String(ch, start, length);
-        switch(currentstate){
+        switch (currentstate) {
             case C_TITLE:
-                RssFeed.setTitle(theString);
+                rssFeed.setTitle(theString);
                 currentstate = 0;
                 break;
-            case RSS_TITLE:
-                RssItem.setTitle(theString);
+            case C_LOGO:
+                rssFeed.setLogoUrl(theString);
+                break;
+            case C_SUMMARY:
+                rssFeed.setSummary(theString);
+                break;
+            case ITEM_TITLE:
+                rssItem.setTitle(theString);
                 currentstate = 0;
                 break;
-            case RSS_DESCRIPTION:
-                RssItem.setDescription(theString);
+            case ITEM_DESCRIPTION:
+                rssItem.setDescription(theString);
                 currentstate = 0;
                 break;
-            case RSS_LINK:
-                RssItem.setLink(theString);
+            case ITEM_LINK:
+                rssItem.setLink(theString);
                 currentstate = 0;
                 break;
-            case RSS_PUBDATE:
-                RssItem.setPubdate(theString);
+            case ITEM_PUBDATE:
+                rssItem.setPubdate(theString);
                 currentstate = 0;
                 break;
-            case RSS_CATEGORY:
-                RssItem.setCategory(theString);
+            case ITEM_CATEGORY:
+                rssItem.setCategory(theString);
                 currentstate = 0;
                 break;
             default:

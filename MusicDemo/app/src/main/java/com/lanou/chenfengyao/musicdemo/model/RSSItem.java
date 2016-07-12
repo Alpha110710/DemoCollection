@@ -11,6 +11,16 @@ public class RSSItem {
     public String link;
     public String category;
     public String pubdate;
+    private String enclosureUrl;//音频文件的url
+
+    public String getEnclosureUrl() {
+        return enclosureUrl;
+    }
+
+    public void setEnclosureUrl(String enclosureUrl) {
+        this.enclosureUrl = enclosureUrl;
+    }
+
     public RSSItem() {
     }
     public String getTitle() {

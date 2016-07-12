@@ -3,15 +3,30 @@ package com.lanou.chenfengyao.musicdemo.model;
 /**
  * Created by ChenFengYao on 16/7/11.
  */
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Vector;
 
 public class RSSFeed {
     private String title;
     private int itemcount;
+    private String summary;
+    private String logoUrl;
+
+    public String getSummary() {
+        return summary;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
+    }
+
+    public String getLogoUrl() {
+        return logoUrl;
+    }
+
+    public void setLogoUrl(String logoUrl) {
+        this.logoUrl = logoUrl;
+    }
 
     private List<RSSItem> itemList;
 
@@ -19,6 +34,7 @@ public class RSSFeed {
     public RSSFeed(){
         itemList = new Vector<RSSItem>(0);
     }
+
 
     /**
      * 负责将一个RSSItem加入到RSSFeed类中
@@ -39,21 +55,6 @@ public class RSSFeed {
         return itemList;
     }
 
-    /**
-     * 负责从RSSFeed类中生成列表所需要的数据
-     * @return
-     */
-    public List getAllItemForListView(){
-        List<Map<String, Object>> data = new ArrayList<Map<String,Object>>();
-        int size = itemList.size();
-        for(int i=0 ; i<size ; i++){
-            HashMap<String , Object> item = new HashMap<String, Object>();
-            item.put(RSSItem.TITLE, itemList.get(i).getTitle());
-            item.put(RSSItem.PUBDATE, itemList.get(i).getPubdate());
-            data.add(item);
-        }
-        return data;
-    }
 
     public String getTitle() {
         return title;

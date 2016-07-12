@@ -10,7 +10,7 @@ import android.view.MenuItem;
 
 import com.lanou.chenfengyao.musicdemo.R;
 import com.lanou.chenfengyao.musicdemo.base.BaseAty;
-import com.lanou.chenfengyao.musicdemo.channel.ChannelDetailFragment;
+import com.lanou.chenfengyao.musicdemo.channel.ChannelDetailAty;
 import com.lanou.chenfengyao.musicdemo.utils.BindContent;
 
 import static com.lanou.chenfengyao.musicdemo.R.*;
@@ -41,10 +41,8 @@ public class MainActivity extends BaseAty
 
     }
 
-    public void showChannelDetail(String url){
-        ChannelDetailFragment fragment = ChannelDetailFragment.instance(url);
-        addFragment(fragment, id.main_content);
-
+    public void showChannelDetail(String url) {
+        ChannelDetailAty.instance(this, url);
     }
 
     @Override
