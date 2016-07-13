@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.lanou.chenfengyao.smalldemos.R;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -45,14 +47,13 @@ public class MyAdapter extends ExRvAdapter {
 
     @Override
     public RecyclerView.ViewHolder onCreateGroupVH(ViewGroup parent) {
-        View view = LayoutInflater.from(context).inflate(com.lanou.chenfengyao.expandablerecyclerview.R.layout.item,parent,false);
 
-        return new MyVH(view);
+        return new MyVH(null);
     }
 
     @Override
     public RecyclerView.ViewHolder onCreateChildVH(ViewGroup parent) {
-        View view = LayoutInflater.from(context).inflate(com.lanou.chenfengyao.expandablerecyclerview.R.layout.item,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.item,parent,false);
 
         return new MyVH(view);
     }
@@ -73,7 +74,7 @@ public class MyAdapter extends ExRvAdapter {
         TextView textView;
         public MyVH(View itemView) {
             super(itemView);
-            textView = (TextView) itemView.findViewById(com.lanou.chenfengyao.expandablerecyclerview.R.id.item_text);
+            textView = (TextView) itemView.findViewById(R.id.item_text);
         }
     }
 }
